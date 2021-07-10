@@ -1,5 +1,4 @@
-const appRoot = require('app-root-path');
-const { path, build, conf, site, page } = require(appRoot + '/modules/core/settings.js');
+const { path, build, conf, site, page } = require('statica/core/settings.js');
 
 const {src, dest, series, parallel}  = require('gulp')
 const log = require('fancy-log');
