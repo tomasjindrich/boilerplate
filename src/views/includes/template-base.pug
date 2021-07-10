@@ -1,0 +1,39 @@
+extends ../../../node_modules/statica/views/template-master
+
+block append settings-custom
+
+block append title
+
+block append styles
+  link(rel="stylesheet", href= getAttachedFile("css/theme.min.css",'?v1'))
+
+
+//- bottom
+block append scripts
+  script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js", integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=", crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.3.0/dist/lazyload.min.js")
+  script(src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js")
+  script(src= getAttachedFile("js/scripts.min.js"))
+
+
+block append fonts
+  link(href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap&subset=latin-ext", rel="stylesheet")
+  link(href="https://fonts.googleapis.com/css?family=Lora:700&display=swap&subset=latin-ext", rel="stylesheet")
+
+
+block append header 
+  include block/header
+
+
+block append content 
+  main.main.pt-height-of-header
+
+
+block append footer
+  include block/footer
+
+
+
+
+  
+

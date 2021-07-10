@@ -1,0 +1,128 @@
+extends ../includes/template-base
+
+block append settings-page 
+  - settings.page.group = "homepage";
+  //- - settings.page.title_base = "";
+  //- - settings.page.description = "";
+
+block append content
+
+  .container-xxxl.shadow
+    .row.no-gutters
+      .col-md-6.col-xl-4
+        a(href= getPermalink('nedelni-pohadky'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-src="img/content/nedelni-pohadky/nedelni-pohadky-square.svg", src="img/content/nedelni-pohadky/nedelni-pohadky-square-placeholder.jpg", alt="Malá čarodějka s hůlkou")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Nedělní pohádky
+                .subtitle ilustrace a omalovánky pro děti
+      .col-md-6.col-xl-4
+        a(href= getPermalink('pan-zurivec'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/pan-zurivec/pan-zurivec-square@500w.jpg 500w, img/content/pan-zurivec/pan-zurivec-square@800w.jpg 800w, img/content/pan-zurivec/pan-zurivec-square@1000w.jpg 1000w, img/content/pan-zurivec/pan-zurivec-square@1600w.jpg 1600w, img/content/pan-zurivec/pan-zurivec-square@2000w.jpg 2000w, img/content/pan-zurivec/pan-zurivec-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/pan-zurivec/pan-zurivec-square-placeholder.jpg", alt="Drobná ilustrace pana Zuřivce")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Pan Zuřivec
+                .subtitle Drobná ilustrace pana Zuřivce
+      .col-md-6.col-xl-4
+        a(href= getPermalink('pan-hovnous'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/pan-hovnous/pan-hovnous-square@500w.jpg 500w, img/content/pan-hovnous/pan-hovnous-square@800w.jpg 800w, img/content/pan-hovnous/pan-hovnous-square@1000w.jpg 1000w, img/content/pan-hovnous/pan-hovnous-square@1600w.jpg 1600w, img/content/pan-hovnous/pan-hovnous-square@2000w.jpg 2000w, img/content/pan-hovnous/pan-hovnous-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/pan-hovnous/pan-hovnous-square-placeholder.jpg", alt="Drobná ilustrace pana Hovňouse")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Pan Hovňous
+                .subtitle Drobná ilustrace pana Hovňouse
+      .col-md-6.col-xl-4
+        a(href= getPermalink('stroje-a-kabely'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/stroje/strojni-mistnost-XB4T698-square@500w.jpg 500w, img/content/stroje/strojni-mistnost-XB4T698-square@800w.jpg 800w, img/content/stroje/strojni-mistnost-XB4T698-square@1000w.jpg 1000w, img/content/stroje/strojni-mistnost-XB4T698-square@1600w.jpg 1600w, img/content/stroje/strojni-mistnost-XB4T698-square@2000w.jpg 2000w, img/content/stroje/strojni-mistnost-XB4T698-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/stroje/strojni-mistnost-XB4T698-square-placeholder.jpg", alt="doodle ilustrace")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Strojovna
+                .subtitle Ilustrace ze série Stroje &amp; Kabely
+      .col-md-6.col-xl-4
+        a(href= getPermalink('cbas-maskot'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-src="img/content/cbas-maskot/cbas-maskot-square.svg", src="img/content/cbas-maskot/cbas-maskot-square-placeholder.jpg", alt="badmintonista s raketou")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Maskot ČBaS
+                .subtitle Ilustrace pro pro Český badmintonový svaz
+      .col-md-6.col-xl-4
+        a(href= getPermalink('redmonster'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/redmonster/redmonster-square@500w.jpg 500w, img/content/redmonster/redmonster-square@800w.jpg 800w, img/content/redmonster/redmonster-square@1000w.jpg 1000w, img/content/redmonster/redmonster-square@1600w.jpg 1600w, img/content/redmonster/redmonster-square@2000w.jpg 2000w, img/content/redmonster/redmonster-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/redmonster/redmonster-square-placeholder.jpg", alt="malý Péťa u počítače")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Redmonster
+                .subtitle Video, animace a ilustrace
+      .col-md-6.col-xl-4
+        a(href= getPermalink('reznici'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/butchers/butchers-square@500w.jpg 500w, img/content/butchers/butchers-square@800w.jpg 800w, img/content/butchers/butchers-square@1000w.jpg 1000w, img/content/butchers/butchers-square@1600w.jpg 1600w, img/content/butchers/butchers-square@2000w.jpg 2000w, img/content/butchers/butchers-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/butchers/butchers-square-placeholder.jpg", alt="Ilustrace dvou řeznických bratrů")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Řezníci
+                .subtitle Ilustrace dvou řeznických bratrů
+      .col-md-6.col-xl-4
+        a(href= getPermalink('okozubka'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/okozubka/okozubka-square@500w.jpg 500w, img/content/okozubka/okozubka-square@800w.jpg 800w, img/content/okozubka/okozubka-square@1000w.jpg 1000w, img/content/okozubka/okozubka-square@1600w.jpg 1600w, img/content/okozubka/okozubka-square@2000w.jpg 2000w, img/content/okozubka/okozubka-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/okozubka/okozubka-square-placeholder.jpg", alt="Ilustrace podivného (ne)tvora")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Okozubka
+                .subtitle Ilustrace podivného (ne)tvora
+      .col-md-6.col-xl-4
+        a(href= getPermalink('pohadkysk'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/pohadkysk/pohadkysk-square@500w.jpg 500w, img/content/pohadkysk/pohadkysk-square@800w.jpg 800w, img/content/pohadkysk/pohadkysk-square@1000w.jpg 1000w, img/content/pohadkysk/pohadkysk-square@1600w.jpg 1600w, img/content/pohadkysk/pohadkysk-square@2000w.jpg 2000w, img/content/pohadkysk/pohadkysk-square@2400w.jpg 2400w, ", data-sizes="(min-width: 700px) 600px, calc(100vw-2*4rem)", src="img/content/pohadkysk/pohadkysk-square-placeholder.jpg", alt="ilustrace skřítka")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Pohádky.sk
+                .subtitle Maskot a značka eshopu
+      .col-md-6.col-xl-4
+        a(href= getPermalink('duel'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-src="img/content/duelicons/duelicons-square.svg", src="img/content/duelicons/duelicons-square-placeholder.jpg", alt="Ikony pro ekonomický software")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 DUEL ikony
+                .subtitle Ikony pro ekonomický software
+      .col-md-12.col-xl-8
+        a(href= getPermalink('dusan-kadlec'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/kadlec/square-2-1@500w.jpg 500w, img/content/kadlec/square-2-1@800w.jpg 800w, img/content/kadlec/square-2-1@1000w.jpg 1000w, img/content/kadlec/square-2-1@1600w.jpg 1600w, img/content/kadlec/square-2-1@2000w.jpg 2000w, img/content/kadlec/square-2-1@2400w.jpg 2400w, ", data-sizes="(min-width: 1300px) 1200px, calc(100vw-2*4rem)", src="img/content/kadlec/square-2-1-placeholder.jpg", alt="ilustrace: tablet, pohár, filmová klapka, psací stroj a komunikující postavičky")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Ilustrace do knihy
+                .subtitle Dušana Kadlece
+      .col-md-6.col-xl-4
+        a(href= getPermalink('nedelni-pohadky'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-src="img/content/nedelni-pohadky/nedelni-pohadky-zviratka-square.svg", src="img/content/nedelni-pohadky/nedelni-pohadky-zviratka-square-placeholder.jpg", alt="medvěd, vepřík a myšák")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Nedělní pohádky
+                .subtitle ilustrace a omalovánky pro děti
+      .col-md-12.col-xl-8
+        a(href= getPermalink('mobilni-hra-train'))
+          .portfolio-card
+            .portfolio-card-content
+              img.lazy(data-srcset="img/content/train/iphonex-square-2-to-1@500w.jpg 500w, img/content/train/iphonex-square-2-to-1@800w.jpg 800w, img/content/train/iphonex-square-2-to-1@1000w.jpg 1000w, img/content/train/iphonex-square-2-to-1@1600w.jpg 1600w, img/content/train/iphonex-square-2-to-1@2000w.jpg 2000w, img/content/train/iphonex-square-2-to-1@2400w.jpg 2400w, ", data-sizes="(min-width: 1300px) 1200px, calc(100vw-2*4rem)", src="img/content/train/iphonex-square-2-to-1-placeholder.jpg", alt="mobilní hra na mobilu")
+            .portfolio-card-info
+              .portfolio-card-info-inner
+                h2.fs-lg-3 Vlak
+                .subtitle Grafika do mobilní hry Vlak
