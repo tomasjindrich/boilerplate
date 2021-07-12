@@ -1,0 +1,34 @@
+//- Pouze základní js, struktura a importy
+
+-
+  var { settings, path, conf, site, page } = require('statica/core/settings.js');
+  var { getAttachedFile, getPermalink } =  require('statica/tools/tools.js');
+
+include ../mixins/all
+
+block settings-default
+block settings-custom 
+block settings-page
+
+doctype html
+html
+  
+  block head-wrap
+    head
+      block head
+        block title
+        block description
+        block favicon
+        block social
+        block style-internal
+        block styles
+        block fonts
+  
+  body
+    block body
+      block top
+      block header
+      block main
+      block footer
+      block bottom
+

@@ -1,0 +1,121 @@
+
+//- NEW LINE
+//- *******************************************************
+mixin n(num)
+  -
+    num = num || 1;
+    var string = "";
+    var i;
+    for (let i = 0; i < num; i++) {
+      string += "\n";
+    }
+  =string
+
+
+//- ICON SVG
+//- *******************************************************
+mixin icon(icon, iconpack)
+  - iconpack = iconpack || conf('svg_sprite_default_file')
+  
+  svg.icon(width="100", height="100")
+    use(href= path('sprite') + iconpack + ".svg#" + icon)
+
+
+
+
+
+//- IMG ADVANCE (responsive with placeholder)
+//- *******************************************************
+mixin imga(fullPath, title, containerMaxWidth, wrap= true,imageMaxWidth = 3000)
+  
+  //- wrap - obalovy div s maxwidth a .mx-auto
+
+  //- - var fullPath = "assets/img/content/" + fullPath;
+  - var path = fullPath.substring(0, fullPath.lastIndexOf('/')+1);
+  - var filename = fullPath.substring(fullPath.lastIndexOf('/')+1, fullPath.lastIndexOf('.'));
+  - var extension = fullPath.substring(fullPath.lastIndexOf('.')+1);
+  //- maly nahled v minimální kvalitě jako placeholder pro lazyload
+  - var placeholder = path + filename  + "-placeholder.jpg"
+
+  
+
+  if extension == "jpg"
+
+    - var sizes = [500, 800, 1000, 1600, 2000, 2400]
+    - var scrsetString = ""
+    - var sizeString = ""
+
+    each size in sizes
+      //- pokud je generovana velikost menší než maximální rozměr obrázku
+      if (size <= imageMaxWidth)
+        - sizeString = "@" + size + "w"
+        - scrsetString = scrsetString + (path + filename  + sizeString + "." + extension) + " " + size + "w, "
+    
+    //- wrap - max-width kontejner
+    if wrap
+      div(class="mx-auto maxw-" + containerMaxWidth + "px")
+        img(class="lazy", data-srcset!= scrsetString, data-sizes= "(min-width: "+ (containerMaxWidth + 100) +"px) " + containerMaxWidth + "px, calc(100vw-2*4rem)", src!= placeholder, alt= title)&attributes(attributes)
+    else
+      img(class="lazy", data-srcset!= scrsetString, data-sizes= "(min-width: "+ (containerMaxWidth + 100) +"px) " + containerMaxWidth + "px, calc(100vw-2*4rem)", src!= placeholder, alt= title)&attributes(attributes)
+
+
+
+  if extension == "svg"
+    
+    //- wrap - max-width kontejner
+    if wrap
+      div(class="mx-auto maxw-" + containerMaxWidth + "px")
+        img(class="lazy", data-src!= fullPath, src!= placeholder, alt= title)
+    else
+      img(class="lazy", data-src!= fullPath, src!= placeholder, alt= title)
+
+
+
+
+mixin menu-link(name, slug, group)
+  - group = group || slug
+  +n
+  a(href= getPermalink(slug) class= group == page('group') ? conf('active_menu_item_class') : '' )= name
+
+
+
+
+mixin devinfo(object)
+  -
+    // default value
+    object = object || settings;
+
+    var style = {
+      table: 'width: 100%; border-collapse:collapse; border: 1px solid silver; font-family: system-ui; font-size: 12px;',
+      td: 'border: 1px solid silver; padding: 0.5em 1em;',
+      th: 'border: 1px solid silver; padding: 1em 1em; text-align: left;',
+      badge: 'padding: 2px 4px; border-radius: 3px;',
+      muted: 'color: silver',
+    };
+
+    var format_filter = {
+      true  : style.badge + 'background-color: #C5EEBD; color: #008800;',
+      false  : style.badge + 'background-color: #FFCDCC; color: #B73B37;',
+      null  : style.badge + 'background-color: #e9ecef; color: #adb5bd;',
+    };
+
+  table(style= style.table)
+
+    tr 
+      th(style= style.th) settings key
+      th(style= style.th) settings value
+
+    each group_val, group_key in object
+
+      each val, key in group_val
+        -
+          // pokud je hodnota funkce, volej tuto fci
+          if (typeof val === 'function') val = val();
+          // Color Formating podle property value
+          if (format_filter.hasOwnProperty(val)) val= "<span style=\"" + format_filter[val] + "\">" + val + "</span>";
+        tr 
+          td(style= style.td)
+            span(style= style.muted)= group_key + '.' 
+            =key
+          td(style= style.td)!= val
+

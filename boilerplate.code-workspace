@@ -1,7 +1,40 @@
 {
 	"folders": [
 		{
+			"name": "boilerplate",
 			"path": "."
+		},
+		{
+			"name": "page",
+			"path": "src/page"
+		},
+		{
+			"name": "scss",
+			"path": "src/scss"
+		},
+		{
+			"name": "presets",
+			"path": "src/views/presets"
+		},
+		{
+			"name": "dist",
+			"path": "dist"
+		},
+		{
+			"name": "views",
+			"path": "src/views"
+		},
+		{
+			"name": "* * * * * * * *",
+			"path": "../templates/folder-parsers/* * * * * * * *"
+		},
+		{
+			"name": "asassin",
+			"path": "../asassin"
+		},
+		{
+			"name": "Dekos",
+			"path": "../../Dekos"
 		}
 	],
 	"settings": {}

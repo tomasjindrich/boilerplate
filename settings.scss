@@ -1,98 +1,53 @@
-// Bootstrap defaults
+//  *  *  *
 
-@import "../vendor/bootstrap/functions";
-@import "../vendor/bootstrap/variables";
-
-// $white:    #fff;
-// $gray-100: #f8f9fa;
-// $gray-200: #e9ecef;
-// $gray-300: #dee2e6;
-// $gray-400: #ced4da;
-// $gray-500: #adb5bd;
-// $gray-600: #6c757d;
-// $gray-700: #495057;
-// $gray-800: #343a40;
-// $gray-900: #212529;
-// $black:    #000;
-
-// $blue:    #0d6efd;
-// $indigo:  #6610f2;
-// $purple:  #6f42c1;
-// $pink:    #d63384;
-// $red:     #dc3545;
-// $orange:  #fd7e14;
-// $yellow:  #ffc107;
-// $green:   #198754;
-// $teal:    #20c997;
-// $cyan:    #0dcaf0;
-
-// $primary:       $blue;
-// $secondary:     $gray-600;
-// $success:       $green;
-// $info:          $cyan;
-// $warning:       $yellow;
-// $danger:        $red;
-// $light:         $gray-100;
-// $dark:          $gray-900;
-
-
-// Custom
-
-$primary-override:   #1c2536;
-$secondary-override: #008800;
-
-// Color Overrides
-$primary:       $primary-override;
-$secondary:     $secondary-override;
+$primary:       #1c2536;
+$secondary:     #008800;
 $success:       $secondary;
-// $info:          $cyan;
-// $warning:       $yellow;
-// $danger:        $red;
-// $light:         $gray-100;
-// $dark:          $gray-900;
 
-// Typo
-$font-family-base: 'PT Sans', sans-serif;
-$headings-font-family: 'Poppins', sans-serif;
-$body-color: $gray-900;
-$headings-color: $primary;
-$link-color: $secondary;
-$link-hover-color: shift-color($link-color, $link-shade-percentage);
-
-// $text-muted: $gray-600;
-
-// Override Theme Colors
-// Generate text color, background, border ...
-$theme-colors-override: (
+$theme-colors-new: (
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
-  // "info":       $info,
-  // "warning":    $warning,
-  // "danger":     $danger,
-  // "light":      $light,
-  // "dark":       $dark
-
-  // adding new colors
-  "g100": $gray-100,
-  "g200": $gray-200,
-  "g300": $gray-300,
-  "g400": $gray-400,
-  "g500": $gray-500,
-  "g600": $gray-600,
-  "g700": $gray-700,
-  "g800": $gray-800,
-  "g900": $gray-900
-
 );
 
-$button-colors-override: (
-  "primary":    $primary,
-  "secondary":  $secondary,
-  // "success":    $success,
-  // "info":       $info,
-  // "warning":    $warning,
-  // "danger":     $danger,
-  // "light":      $light,
-  // "dark":       $dark
-);
+// $font-family-base     : 'PT Sans', sans-serif;
+// $headings-font-family : 'Poppins', sans-serif;
+$body-color           : $gray-900;
+$headings-color       : $primary;
+$link-color           : $secondary;
+$link-hover-color     : shift-color($link-color, $link-shade-percentage);
+$text-muted           : $gray-500;
+
+//  *  *  *
+
+
+$utility-colors-new: map-merge($theme-colors-new, $grays);
+$button-colors-new: $theme-colors-new;
+
+
+
+
+// Pokus o funcki která vrátí jen změněné hodnoty v theme-colors
+// $theme-colors-default: $theme-colors;
+
+// @function getMapDiff($map1, $map2) {
+//   $diff: $map2;
+//   @each $key, $val in $map1 {
+//     @if map-get($map1, $key) == map-get($map2, $key) {
+//       $diff: map-remove($diff, $key);
+//     }
+//   }
+//   @return $diff;
+// };
+
+// @mixin debug-map($map) {
+//   @at-root {
+//       __properties__ {
+//           @each $key, $value in $map {
+//               #{$key}: inspect($value);
+//           }
+//       }
+//   }
+// }
+
+// @include debug-map($theme-colors);
