@@ -42,12 +42,6 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/dist\/node_modules",
-      "oF" : 0
-    },
     "\/package.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -56,7 +50,7 @@
       "oO" : 1,
       "oS" : 1
     },
-    "\/readme.md" : {
+    "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
       "eF" : 1,
@@ -65,9 +59,9 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/dist\/readme.html",
-      "oF" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/README.html",
+      "oF" : 1,
       "oFM" : 0,
       "oS" : 0,
       "pHT" : 0,
@@ -86,25 +80,11 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/settings.scss" : {
-      "aP" : 0,
-      "bl" : 0,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/css\/settings.min.css",
-      "oF" : 1,
-      "oS" : 0,
-      "pg" : 2,
-      "sct" : 0
-    },
     "\/src\/copy" : {
       "ft" : 65536,
       "oA" : 2,
-      "oAP" : "\/dist\/copy",
-      "oF" : 0
+      "oAP" : "\/dist",
+      "oF" : 2
     },
     "\/src\/favicon" : {
       "ft" : 65536,
@@ -173,6 +153,20 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/src\/scss\/bootstrap-override.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/css\/bootstrap-override.min.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 2,
+      "sct" : 0
+    },
     "\/src\/scss\/custom.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -182,6 +176,20 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/css\/custom.min.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 2,
+      "sct" : 0
+    },
+    "\/src\/scss\/settings.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/css\/settings.min.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 2,
@@ -291,6 +299,16 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/src\/views\/presets\/styleguide\/colors.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/colors.html",
+      "oF" : 0,
+      "oS" : 0
+    },
     "\/src\/views\/template\/base.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -321,16 +339,6 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/template\/structure.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/structure.html",
-      "oF" : 0,
-      "oS" : 0
-    },
     "\/test.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -345,8 +353,8 @@
     "\/tmp" : {
       "ft" : 65536,
       "oA" : 2,
-      "oAP" : "\/dist\/tmp",
-      "oF" : 0
+      "oAP" : "\/dist",
+      "oF" : 2
     }
   },
   "hooks" : [

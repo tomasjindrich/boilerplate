@@ -1,0 +1,43 @@
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+
+//  *  *  *
+
+// vloží znovu vygenerované reboot hodnoty, fonty, barvy atd
+$module-bootstrap-override-reboot: true;
+
+//  *  *  *
+
+// barvy které chci nahradit
+$primary:       #1c2536;
+$secondary:     #008800;
+$success:       $secondary;
+$green:         $secondary;
+
+// seznam nahrazovaných barev
+$theme-colors-override: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+);
+
+// .text-muted override
+$text-colors-append: ("text-muted": $gray-500);
+
+// seznam barev které chci přidat všem utilitám
+// (text color, background, border ...)
+$utility-colors-append: ();
+
+// příklad:
+// chci přidat do bg colors jednu konkrétní barvu
+// $background-colors-append: ("gold": "#ffd772");
+
+// Typografie
+// $font-family-base     : 'PT Sans', sans-serif;
+// $headings-font-family : 'Poppins', sans-serif;
+$body-color           : $gray-900; // barva textu
+$headings-color       : $primary; // barva headings, titulků
+$link-color           : $secondary;
+$link-hover-color     : shift-color($link-color, $link-shade-percentage);
+
+//  *  *  *

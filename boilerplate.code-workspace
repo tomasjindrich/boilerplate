@@ -5,37 +5,39 @@
 			"path": "."
 		},
 		{
-			"name": "page",
-			"path": "src/page"
-		},
-		{
-			"name": "scss",
-			"path": "src/scss"
-		},
-		{
-			"name": "presets",
-			"path": "src/views/presets"
-		},
-		{
-			"name": "dist",
-			"path": "dist"
-		},
-		{
-			"name": "views",
-			"path": "src/views"
-		},
-		{
 			"name": "* * * * * * * *",
 			"path": "../templates/folder-parsers/* * * * * * * *"
 		},
 		{
-			"name": "asassin",
-			"path": "../asassin"
+			"path": "../Framework"
 		},
 		{
-			"name": "Dekos",
-			"path": "../../Dekos"
+			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"favorites.resources": [
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/scss/theme.scss",
+			"settings.js",
+			"settings.scss",
+			"src/views",
+			"README.md",
+			"dist/css/theme.min.css",
+			"dist/kategorie.html",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/dist/css/theme.min.css",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/dist/styleguide.html",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/views/presets/styleguide.pug",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/settings.js",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/settings.scss",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/views/template/core.pug",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/theme.scss",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/settings.js",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/views/presets",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/README.md",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/_imports.scss",
+			"/Users/tomas/Dropbox/Data/Projects/Framework/bootstrap/_variables.scss",
+			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/settings.scss"
+		],
+		"favorites.sortOrder": "ASC"
+	}
 }

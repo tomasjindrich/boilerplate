@@ -1,5 +1,10 @@
 # Statica Boilerplate
 
+## TODO
+    * vytáhnout z bootstrap-override samostatný bootstrap-extension
+    * bootstrap-custom, úplný rebuild bootstrap.css
+    
+
 ## SASS
 
 Přímý import z adresáře Framework (nastavení v Codekit)
@@ -8,19 +13,18 @@ Přímý import z adresáře Framework (nastavení v Codekit)
 
 ## Page Templates
 
-structure -> master → base -> page
+core -> master → base -> page
 
 ## SCSS Framework
 
-### bs
+### bootstrap/
 
-Zdrojová verze SASS Bootstrapu
+Source Sass
 
-### bs-add
+### bootstrap-override/
 
-Vygeneruje nové Bootstrap Utility Classes přidaných do variables.
+Vygeneruje nové a aktualizované classes (buttons, utilitites, reboot...)
 
-### bs-override
+### bootstrap-docs/
 
-Vygeneruje znovu prvky ovlivněné změnou Theme Colors
-(Reboot, Utilities, Components)
+CSS pro prezentaci prvků, zkopírováno z Bootstrap Docs page
