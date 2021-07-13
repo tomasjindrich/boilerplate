@@ -62,7 +62,9 @@ jspm_packages/
 
 # Custom
 *.code-workspace
+*.codekit3
 
 # Explicit Allowed
 !project-template.code-workspace
+!boilerplate.code-workspace
 

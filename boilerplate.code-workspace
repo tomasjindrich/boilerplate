@@ -33,11 +33,11 @@
 			"path": "../../Framework/asassin"
 		},
 		{ "name": "🌳 Statica",
-			"path": "../Framework/statica"
+			"path": "../../Framework/statica"
 		},
 		{
 			"name": "📍 Framework",
-			"path": "../Framework"
+			"path": "../../Framework"
 		},
 		{
 			"name": "⚙️ Projects",
