@@ -65,6 +65,6 @@ jspm_packages/
 *.codekit3
 
 # Explicit Allowed
-!project-template.code-workspace
+!.gitignore
 !boilerplate.code-workspace
 
