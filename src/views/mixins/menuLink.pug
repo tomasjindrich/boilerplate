@@ -1,0 +1,5 @@
+mixin menu-link(name, slug, group)
+  - group = group || slug
+  +n
+  a(href= getPermalink(slug) class= group == page('group') ? conf('active_menu_item_class') : '' )= name
+

@@ -1,0 +1,5 @@
+mixin icon(icon, iconpack)
+  - iconpack = iconpack || conf('svg_sprite_default_file')
+  
+  svg.icon(width="100", height="100")
+    use(href= path('sprite') + iconpack + ".svg#" + icon)

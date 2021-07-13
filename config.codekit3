@@ -17,13 +17,13 @@
       "oAP" : "\/dist\/.gitignore",
       "oF" : 1
     },
-    "\/boilerplate.code-workspace" : {
+    "\/dekos.code-workspace" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/boilerplate.code-workspace",
-      "oF" : 1
+      "oA" : 0,
+      "oAP" : "\/dist\/dekos.code-workspace",
+      "oF" : 0
     },
     "\/dist" : {
       "ft" : 65536,
@@ -83,8 +83,8 @@
     "\/src\/copy" : {
       "ft" : 65536,
       "oA" : 2,
-      "oAP" : "\/dist",
-      "oF" : 2
+      "oAP" : "\/dist\/copy",
+      "oF" : 0
     },
     "\/src\/favicon" : {
       "ft" : 65536,
@@ -130,6 +130,76 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/dist\/kategorie.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/komponenty-formulare.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/komponenty-formulare.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/komponenty-podstranka.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/komponenty-podstranka.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kosik-1-obsah-kosiku.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kosik-1-obsah-kosiku.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kosik-2-doprava-a-platba.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kosik-2-doprava-a-platba.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kosik-3-dodaci-udaje.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kosik-3-dodaci-udaje.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kosik-4-souhrn-objednavky.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kosik-4-souhrn-objednavky.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kosik-5-podekovani.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kosik-5-podekovani.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -201,6 +271,16 @@
       "oAP" : "\/dist\/views",
       "oF" : 0
     },
+    "\/src\/views\/blocks\/cart-item-row.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/cart-item-row.html",
+      "oF" : 0,
+      "oS" : 0
+    },
     "\/src\/views\/blocks\/header.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -211,7 +291,7 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/components\/product-card.pug" : {
+    "\/src\/views\/blocks\/product-card.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
@@ -221,23 +301,133 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/mixins\/all.pug" : {
+    "\/src\/views\/components.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/all.html",
+      "oAP" : "\/dist\/components.html",
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/mixins\/mixins.pug" : {
+    "\/src\/views\/components\/form-check.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/form-check.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/components\/form-control.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/form-control.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/components\/payment-item-row.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/payment-item-row.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/components\/shipment-item-row.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/shipment-item-row.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/components\/step.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/step.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/components\/steps.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/steps.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/mixins.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins\/devInfo.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/devInfo.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins\/icon.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/icon.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins\/imgAdvance.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/imgAdvance.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins\/menuLink.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/menuLink.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/views\/mixins\/newLine.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/newLine.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -311,12 +501,6 @@
       "oF" : 1,
       "sC" : 0,
       "tS" : 0
-    },
-    "\/tmp" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/dist",
-      "oF" : 2
     }
   },
   "hooks" : [
@@ -327,7 +511,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 646861569.80702102,
-    "displayValue" : "StaticaBoilerplate",
+    "displayValue" : "Dekos",
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "brackets_orange",
     "iconImageWasSetByUser" : 1,

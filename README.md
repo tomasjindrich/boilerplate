@@ -11,9 +11,19 @@ Přímý import z adresáře Framework (nastavení v Codekit)
 
     @import bs/bez-slozite-cesty.scss
 
-## Page Templates
+## Views
+
+### Templates
 
 core -> master → base -> page
+
+### Blocks
+
+Fragmenty kodu, partials
+
+### Components 
+
+Pug Mixins, komponenty s parametry
 
 ## SCSS Framework
 

@@ -1,0 +1,21 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  - settings.page.group = "homepage";
+  //- - settings.page.title_base = "";
+  //- - settings.page.description = "";
+
+block append content
+  
+  .container-fluid.container-narrow.my-5
+
+    .text-center
+      i.bi.bi-check-circle-fill.display-2.text-success
+      h1.fs-2.text-success.my-4
+        | Objednávka byla odeslána!
+      p
+        | Vaše objednávka <span class="fw-bold">č. 45879211</span> byla odeslána. <br>
+        | Budeme Vás informovat o její expedici.
+      
+
+

@@ -2,10 +2,11 @@
 
 -
   // Statica Framework
-  var { settings, path, conf, site, page } = require('../../../Framework/statica/core/settings.js');
-  var { getAttachedFile, getPermalink } =  require('../../../Framework/statica/tools/tools.js');
+  var { settings, path, conf, site, page } = require('../../../../Framework/statica/core/settings.js');
+  var { getAttachedFile, getPermalink } =  require('../../../../Framework/statica/tools/tools.js');
 
-include /src/views/mixins/all
+include /src/views/mixins
+include /src/views/components
 
 block settings-default
 block settings-custom 

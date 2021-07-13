@@ -1,0 +1,42 @@
+mixin imga(fullPath, title, containerMaxWidth, wrap= true,imageMaxWidth = 3000)
+  
+  //- wrap - obalovy div s maxwidth a .mx-auto
+
+  //- - var fullPath = "assets/img/content/" + fullPath;
+  - var path = fullPath.substring(0, fullPath.lastIndexOf('/')+1);
+  - var filename = fullPath.substring(fullPath.lastIndexOf('/')+1, fullPath.lastIndexOf('.'));
+  - var extension = fullPath.substring(fullPath.lastIndexOf('.')+1);
+  //- maly nahled v minimální kvalitě jako placeholder pro lazyload
+  - var placeholder = path + filename  + "-placeholder.jpg"
+
+  
+
+  if extension == "jpg"
+
+    - var sizes = [500, 800, 1000, 1600, 2000, 2400]
+    - var scrsetString = ""
+    - var sizeString = ""
+
+    each size in sizes
+      //- pokud je generovana velikost menší než maximální rozměr obrázku
+      if (size <= imageMaxWidth)
+        - sizeString = "@" + size + "w"
+        - scrsetString = scrsetString + (path + filename  + sizeString + "." + extension) + " " + size + "w, "
+    
+    //- wrap - max-width kontejner
+    if wrap
+      div(class="mx-auto maxw-" + containerMaxWidth + "px")
+        img(class="lazy", data-srcset!= scrsetString, data-sizes= "(min-width: "+ (containerMaxWidth + 100) +"px) " + containerMaxWidth + "px, calc(100vw-2*4rem)", src!= placeholder, alt= title)&attributes(attributes)
+    else
+      img(class="lazy", data-srcset!= scrsetString, data-sizes= "(min-width: "+ (containerMaxWidth + 100) +"px) " + containerMaxWidth + "px, calc(100vw-2*4rem)", src!= placeholder, alt= title)&attributes(attributes)
+
+
+
+  if extension == "svg"
+    
+    //- wrap - max-width kontejner
+    if wrap
+      div(class="mx-auto maxw-" + containerMaxWidth + "px")
+        img(class="lazy", data-src!= fullPath, src!= placeholder, alt= title)
+    else
+      img(class="lazy", data-src!= fullPath, src!= placeholder, alt= title)

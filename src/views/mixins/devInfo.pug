@@ -1,0 +1,39 @@
+mixin devinfo(object)
+  -
+    // default value
+    object = object || settings;
+
+    var style = {
+      table: 'width: 100%; border-collapse:collapse; border: 1px solid silver; font-family: system-ui; font-size: 12px;',
+      td: 'border: 1px solid silver; padding: 0.5em 1em;',
+      th: 'border: 1px solid silver; padding: 1em 1em; text-align: left;',
+      badge: 'padding: 2px 4px; border-radius: 3px;',
+      muted: 'color: silver',
+    };
+
+    var format_filter = {
+      true  : style.badge + 'background-color: #C5EEBD; color: #008800;',
+      false  : style.badge + 'background-color: #FFCDCC; color: #B73B37;',
+      null  : style.badge + 'background-color: #e9ecef; color: #adb5bd;',
+    };
+
+  table(style= style.table)
+
+    tr 
+      th(style= style.th) settings key
+      th(style= style.th) settings value
+
+    each group_val, group_key in object
+
+      each val, key in group_val
+        -
+          // pokud je hodnota funkce, volej tuto fci
+          if (typeof val === 'function') val = val();
+          // Color Formating podle property value
+          if (format_filter.hasOwnProperty(val)) val= "<span style=\"" + format_filter[val] + "\">" + val + "</span>";
+        tr 
+          td(style= style.td)
+            span(style= style.muted)= group_key + '.' 
+            =key
+          td(style= style.td)!= val
+

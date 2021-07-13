@@ -1,0 +1,78 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  - settings.page.group = "homepage";
+  //- - settings.page.title_base = "";
+  //- - settings.page.description = "";
+
+block append content
+  
+  .container-fluid.container-narrow.my-5
+
+    .group-of-steps.mb-5.d-none.d-sm-flex
+      +step('Košík','1').step-done
+      +step('Doprava a platba','2').step-done
+      +step('Dodací údaje','3').step-active
+      +step('Souhrn a odeslání','4')
+
+    .row.gx-5
+      .col-12.col-sm-6
+        h1.fs-3.mb-3.h-2
+          | Dodací údaje
+        .bg-g100.p-3.p-md-5.mb-5
+          .form-vertical-group
+            +form-control('Jméno','','Nápověda k položce formuláře.')
+            +form-control('Přijmení')
+            +form-control('Město')
+            +form-control('Ulice')
+            +form-control('Číslo popisné')
+            +form-control('PSČ')
+            +form-control('E-mail','email')
+            +form-control('Telefon')
+
+        h2.fs-5.mb-3 Fakturační údaje
+        .bg-g100.p-3.p-md-5.mb-5
+          .form-vertical-group
+            +form-check('Fakturační adresa je jiná než dodací')
+              
+      .col-12.col-sm-6
+      
+        h2.fs-5.mb-3.h-2 Máte již u nás účet?
+        .bg-g100.p-3.p-md-5.mb-5
+          form.form-vertical-group(action='')
+            +form-control('Přihlašovací e-mail')
+            +form-control('Heslo','password')
+            .row.row-cols-2
+              .col.col-auto.me-auto
+                .fs-7
+                  a(href="#") Zapomenuté heslo? <br>
+                  a(href="#") Nová registrace
+              .col.col-auto
+                a.btn.btn-primary(href="#", role="button") Přihlásit
+        
+        h2.fs-5.mb-3.h-2 Nebo vyberte z uložených
+        
+        .p-4.mb-2.border.border-success.border-3
+          span.fw-bold
+            | Pampeliška s.r.o. <br>
+          | Kotrmelcova 45/421 <br>
+          | 145 21 Hodonín <br>
+    
+        .p-4.mb-2.border.border-g300.text-muted
+          span.fw-bold
+            | Pampeliška s.r.o. <br>
+          | Kotrmelcova 45/421 <br>
+          | 145 21 Hodonín <br>
+
+        .text-end
+          a(href="#").link-muted upravit adresy
+    
+    .row.row-cols-1.row-cols-sm-2
+      .col.mb-4
+        a.link-muted(href="kosik-2-doprava-a-platba.html")
+          i.me-1.bi.bi-chevron-left
+          | Zpět na dopravu a platbu
+      .col.text-end
+        a.btn.btn-xl.btn-primary(href='kosik-4-souhrn-objednavky.html')
+          | Souhrn objednávky
+          i.bi.bi-chevron-right.ms-3
