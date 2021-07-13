@@ -1,0 +1,18 @@
+mixin payment-item-row(method,price)
+  
+  //- scripts
+  -
+    method = method || 'Platební metoda'
+    price = price || '0,-'
+
+  .item-row.border-bottom.border-g200.py-2
+    .w-16
+      .form-check.form-check-inline
+        input.form-check-input(type='checkbox', value='', id='')
+        label.form-check-label(for='')= method
+    .item-row-col.w-5
+      span.fs-7= price
+    .item-row-col
+      span.text-muted.fs-7
+        | Lorem, ipsum dolor sit amet consectetur.
+

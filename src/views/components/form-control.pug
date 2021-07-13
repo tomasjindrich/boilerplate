@@ -1,0 +1,14 @@
+mixin form-control(label,type,note)
+  
+  //- defaults
+  -
+    label = label || 'Položka formuláře'
+    type = type || 'text'
+
+  .mb-3
+    label.form-label(for='exampleInput')= label
+    input#exampleInput.form-control(type= type, aria-describedby='exampleHelp')
+    if note
+      #exampleHelp.form-text= note
+
+

@@ -1,0 +1,10 @@
+mixin form-check(label)
+  
+  //- defaults
+  -
+    label = label || 'Checkbox'
+
+  .form-check.form-check-inline
+    input.form-check-input(type='checkbox', value='', id='')
+    label.form-check-label(for='')= label
+

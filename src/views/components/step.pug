@@ -1,0 +1,10 @@
+mixin step(title,num) 
+  .step(class!=attributes.class)
+      .step-title= title
+      .step-progress
+        .step-line-start
+        .step-mark
+          .step-mark-num.font-heading= num
+          .step-mark-icon.bi.bi-check-circle-fill
+        .step-line-end
+
