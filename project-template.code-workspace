@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "Project Name",
+			"path": "."
+		},
+		{
+			"name": "→ SCSS",
+			"path": "src/scss"
+		},
+		{
+			"name": "→ Pages",
+			"path": "src/pages"
+		},
+		{
+			"name": "→ Views / Templates",
+			"path": "src/views/templates"
+		},
+		{
+			"name": "→ Presets / Pages",
+			"path": "src/views/presets/pages"
+		},
+		{
+			"name": "→ Dist / CSS",
+			"path": "dist/css/"
+		},
+	],
+	"settings": {
+	
+	}
+}

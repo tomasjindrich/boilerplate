@@ -17,6 +17,14 @@
       "oAP" : "\/dist\/.gitignore",
       "oF" : 1
     },
+    "\/boilerplate.code-workspace" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/boilerplate.code-workspace",
+      "oF" : 0
+    },
     "\/dekos.code-workspace" : {
       "cB" : 0,
       "ft" : 8192,
@@ -49,6 +57,14 @@
       "oF" : 0,
       "oO" : 1,
       "oS" : 1
+    },
+    "\/project-template.code-workspace" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/project-template.code-workspace",
+      "oF" : 0
     },
     "\/README.md" : {
       "cB" : 0,
