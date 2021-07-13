@@ -1,43 +1,50 @@
 {
 	"folders": [
 		{
-			"name": "boilerplate",
+			"name": "⚡️ Boilerplate",
 			"path": "."
+		},
+		{
+			"name": "→ SCSS",
+			"path": "src/scss"
+		},
+		{
+			"name": "→ Pages",
+			"path": "src/pages"
+		},
+		{
+			"name": "→ Views / Templates",
+			"path": "src/views/templates"
+		},
+		{
+			"name": "→ Presets / Pages",
+			"path": "src/views/presets/pages"
+		},
+		{
+			"name": "→ Dist / CSS",
+			"path": "dist/css/"
 		},
 		{
 			"name": "* * * * * * * *",
 			"path": "../templates/folder-parsers/* * * * * * * *"
 		},
 		{
+			"name": "🌶 Asassin",
+			"path": "../Framework/asassin"
+		},
+		{ "name": "🌳 Statica",
+			"path": "../Framework/statica"
+		},
+		{
+			"name": "📍 Framework",
 			"path": "../Framework"
 		},
 		{
+			"name": "⚙️ Projects",
 			"path": ".."
-		}
+		},
 	],
 	"settings": {
-		"favorites.resources": [
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/scss/theme.scss",
-			"settings.js",
-			"settings.scss",
-			"src/views",
-			"README.md",
-			"dist/css/theme.min.css",
-			"dist/kategorie.html",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/dist/css/theme.min.css",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/dist/styleguide.html",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/views/presets/styleguide.pug",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/settings.js",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/settings.scss",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/boilerplate/src/views/template/core.pug",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/theme.scss",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/settings.js",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/views/presets",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/README.md",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/_imports.scss",
-			"/Users/tomas/Dropbox/Data/Projects/Framework/bootstrap/_variables.scss",
-			"/Users/tomas/Dropbox/Data/Projects/Boilerplate/src/scss/settings.scss"
-		],
-		"favorites.sortOrder": "ASC"
+	
 	}
 }
