@@ -41,9 +41,9 @@ Thumbs.db
 node_modules/
 jspm_packages/
 
-# Production directories
-/dist
-/tmp
+# Files in Production directories
+/dist/**/*
+/tmp/**/*
 
 # dotenv environment variables file
 .env
@@ -61,10 +61,10 @@ jspm_packages/
 .pnp.*
 
 # Custom
-*.code-workspace
-*.codekit3
+# *.code-workspace
+# *.codekit3
 
 # Explicit Allowed
 !.gitignore
-!boilerplate.code-workspace
+# !boilerplate.code-workspace
 

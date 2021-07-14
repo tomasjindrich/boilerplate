@@ -3,7 +3,11 @@
 -
   // Statica Framework
   var { settings, path, conf, site, page } = require('../../../../Framework/statica/core/settings.js');
-  var { getAttachedFile, getPermalink } =  require('../../../../Framework/statica/tools/tools.js');
+  var { getAttachedFile, getPermalink, fakeData, getRandom } =  require('../../../../Framework/statica/tools/tools.js');
+  
+  // Load JSON Data
+  // cesta relativně od pages/
+  var fake = require('../data/fake.js');
 
 include /src/views/mixins
 include /src/views/components

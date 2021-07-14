@@ -1,0 +1,160 @@
+extends /src/views/custom/templates/base
+
+block append settings-page 
+  - settings.page.group = "homepage";
+  //- - settings.page.title_base = "";
+  //- - settings.page.description = "";
+
+block append content
+
+  .container-fluid.p-5(style="max-width: 50rem")
+
+    .section
+      h1.text-secondary Obecná podstránka
+      p.lead.mb-5 Podtitulek nebo krátký sumář textu
+      p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui totam maxime quod. Nihil atque consequatur deserunt quisquam necessitatibus dicta ducimus, eaque odio porro provident at quo voluptatibus sunt tempora sit libero nostrum doloremque quos repellat rerum vel deleniti assumenda odit labore! Id ratione doloremque magni voluptatibus cumque quidem excepturi!
+      p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga nam unde praesentium! Nostrum aliquam commodi distinctio assumenda? Fuga doloremque facere tenetur laborum harum suscipit dolor, ex dolorum pariatur, atque repellat iste ullam rem minima rerum ea consequuntur quae culpa tempore.
+
+    .section
+      .row.row-cols-1.row-cols-md-2.gx-5
+        
+        .col
+          .card.text-center.py-4.my-2
+            i.bi.bi-check-circle-fill.display-4.text-secondary.mb-3
+            .fs-5.font-heading.fw-bold Box s ikonkou
+            p.text-muted.fs-7 Krátký text nebo podtitulek
+
+        .col
+          .card.text-center.py-4.my-2
+            i.bi.bi-check-circle-fill.display-4.text-secondary.mb-3
+            .fs-5.font-heading.fw-bold Box s ikonkou
+            p.text-muted.fs-7 Krátký text nebo podtitulek
+
+    .section
+      .bg-primary.text-light.p-5
+        .row
+          .col-auto.me-auto.font-heading.mb-4
+            .display-5.fw-bold Call to action
+            .fs-5 Podtitulek nebo krátký text
+          .col-auto
+            a.btn.btn-light.btn-xl(href="#", role="button")
+              | Tlačítko
+              i.bi.bi-chevron-right.ms-2
+
+    .section
+      h2.mb-4 Obrázek s textem
+      .clearfix
+        img.col-md-6.float-md-end.mb-3.ms-md-3.img-fluid(src="https://via.placeholder.com/600x400", alt="...")
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae dolorum esse provident odio, eos illo beatae, ut corrupti libero dolorem asperiores culpa tempore alias? Eos velit suscipit in obcaecati nam ex facilis animi porro dolor dolores error laboriosam molestias, aspernatur aut ad fuga eaque distinctio sit saepe officia similique?  
+        p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ipsam, doloremque pariatur eaque, repellat officiis dolore aperiam autem maxime voluptates provident impedit et? Repellendus praesentium dolores commodi voluptatum ad accusamus pariatur ex architecto, laboriosam asperiores voluptates debitis itaque autem saepe minus deleniti sunt error explicabo? Aliquid, ratione. Deserunt, sequi vero!
+
+    .section
+      h2.mb-4 Seznamy a odrážky
+      .row.row-cols-1.row-cols-md-2.gy-4
+        .col 
+          ul
+            li Integer molestie lorem at massa
+            li Facilisis in pretium nisl aliquet
+            li
+              | Nulla volutpat aliquam velit
+
+              ul
+                li Phasellus iaculis neque
+                li Purus sodales ultricies
+                li Vestibulum laoreet porttitor sem
+                li Ac tristique libero volutpat at
+            li Faucibus porta lacus fringilla vel
+            li Aenean sit amet erat nunc
+            li Eget porttitor lorem
+        .col
+          ol
+            li Lorem ipsum dolor sit amet
+            li Consectetur adipiscing elit
+            li Integer molestie lorem at massa
+            li Facilisis in pretium nisl aliquet
+            li Nulla volutpat aliquam velit
+            li Faucibus porta lacus fringilla vel
+            li Aenean sit amet erat nunc
+            li Eget porttitor lorem
+        
+        .col
+          .icon-list
+            .item-row.py-1 
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Lorem ipsum dolor sit amet
+            .item-row.py-1
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Consectetur adipiscing elit
+            .item-row.py-1
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Integer molestie lorem at massa
+            .item-row.py-1
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Facilisis in pretium nisl aliquet
+            .item-row.py-1
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Nulla volutpat aliquam velit
+            .item-row.py-1 
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Faucibus porta lacus fringilla vel
+            .item-row.py-1  
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Aenean sit amet erat nunc
+            .item-row.py-1  
+              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
+              div Eget porttitor lorem
+        
+        .col
+          .icon-list
+            .item-row.py-1 
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Lorem ipsum dolor sit amet
+            .item-row.py-1
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Consectetur adipiscing elit
+            .item-row.py-1
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Integer molestie lorem at massa
+            .item-row.py-1
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Facilisis in pretium nisl aliquet
+            .item-row.py-1
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Nulla volutpat aliquam velit
+            .item-row.py-1 
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Faucibus porta lacus fringilla vel
+            .item-row.py-1  
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Aenean sit amet erat nunc
+            .item-row.py-1  
+              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
+              div Eget porttitor lorem
+
+    .section
+      h2.mb-4 Tabulka
+      table.table.table-striped
+        tr
+          th Faucibus
+          th Integer
+          th Consectetur
+          th Eget
+          th Aenean
+        tr 
+          td nunc
+          td velit
+          td erat
+          td sit
+          td pretium
+        tr 
+          td sit
+          td pretium
+          td erat
+          td nunc
+          td velit
+        tr 
+          td erat
+          td nunc
+          td sit
+          td pretium
+          td velit

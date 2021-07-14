@@ -13,16 +13,20 @@
 			"path": "src/pages"
 		},
 		{
-			"name": "→ Views / Templates",
-			"path": "src/views/templates"
+			"name": "→ Blocks",
+			"path": "src/views/blocks"
 		},
 		{
-			"name": "→ Presets / Pages",
-			"path": "src/views/presets/pages"
+			"name": "→ Views",
+			"path": "src/views"
 		},
 		{
-			"name": "→ Dist / CSS",
-			"path": "dist/css/"
+			"name": "→ Custom",
+			"path": "src/views/custom"
+		},
+		{
+			"name": "→ Dist",
+			"path": "dist"
 		},
 		{
 			"name": "* * * * * * * *",

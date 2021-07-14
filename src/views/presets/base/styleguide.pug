@@ -1,0 +1,13 @@
+extends /src/views/custom/templates/base
+
+block append styles
+  link(rel="stylesheet", href= getAttachedFile("css/styleguide.min.css"))
+
+
+block content
+
+  div(style="max-width: 70rem; margin: 0 auto; padding: 5rem")
+
+
+    include /src/views/blocks/styleguide/colors
+    include /src/views/blocks/styleguide/bottom
