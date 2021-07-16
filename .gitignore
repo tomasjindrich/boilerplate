@@ -68,8 +68,8 @@ jspm_packages/
 
 # Boilerplate
 
-/dist/**/*
-/tmp/**/*
+/dist
+/tmp
 
 /src/dummy/**/*
 /src/img/**/*
@@ -78,5 +78,6 @@ jspm_packages/
 
 # Explicit Allowed
 !*-sample*
+!.gitkeep 
 !/src/scss/settings.scss
 !/src/scss/theme.scss
