@@ -10,9 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "app-root-path": "^3.0.0",
-    "pug": "^3.0.2",
-    "dummy": "file:../../Framework/puggy",
-    "statica": "file:../../Framework/statica"
+    "app-root-path": "^3.0.0"
   }
 }

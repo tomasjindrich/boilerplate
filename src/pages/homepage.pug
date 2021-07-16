@@ -1,0 +1,102 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  - settings.page.title_base = "Kategorie";
+  //- - settings.page.group = "";
+  //- - settings.page.description = "";
+
+block append content
+
+  .mb-4.ms-n4
+    #carouselExampleSlidesOnly.carousel.slide(data-bs-ride="carousel")
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src="https://via.placeholder.com/1600x400?text=banner1", alt="...")
+        .carousel-item
+          img.d-block.w-100(src="https://via.placeholder.com/1600x400?text=banner2", alt="...")
+        .carousel-item
+          img.d-block.w-100(src="https://via.placeholder.com/1600x400?text=banner3", alt="...")
+
+  .mb-4.row.g-3.row-cols-1.row-cols-md-3.row-cols-xxl-6
+    
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-clock.text-primary.fs-1
+        .lh-sm
+          .text-nowrap Dnes u nás,
+          .text-nowrap zítra u vás
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-box-seam.text-primary.fs-1
+        .lh-sm
+          .text-nowrap Skladem
+          .text-nowrap 99 % produktů
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-truck.text-primary.fs-1
+        .lh-sm
+          .text-nowrap Doprava zdarma
+          .text-nowrap.fs-9 dle kraje a výše objednávky
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-trophy.text-primary.fs-1
+        .lh-sm
+          .text-nowrap Největší eshop
+          .text-nowrap s obaly v ČR
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-clock.text-primary.fs-1
+        .lh-sm
+          .text-nowrap BIO obaly
+          .text-nowrap.fs-8 balíme ekologicky
+    .col
+      .d-flex.align-items-center
+        i.me-2.bi-gear.text-primary.fs-1
+        .lh-sm
+          .text-nowrap Potisk
+          .text-nowrap na zakázku
+
+  
+  .row.g-4.mb-4
+    .col 
+      img.img-fluid(src="https://via.placeholder.com/800x400", alt="")
+    .col 
+      img.img-fluid(src="https://via.placeholder.com/800x400", alt="")
+  
+  .section-sm
+    h2.fs-4.text-uppercase.mb-3 Novinky
+    .p-4.bg-white
+      .row.row-cols-1.row-cols-sm-2.row-cols-lg-4.g-3.flex-wrap
+        +repeat(4)
+          +productCard
+  
+  .section-sm
+    h2.fs-4.text-uppercase.mb-3 Novinky
+    .p-4.bg-white
+      .grid-between.bg-300
+        +repeat(4)
+          +productCard
+  
+  
+  .section-sm
+    h2.fs-4.text-uppercase.mb-3 Top kategorie produktů
+    .p-4.bg-white
+      .row.gy-4.row-cols-1.row-cols-lg-2.row-cols-xl-4
+        
+        +repeat(12)
+          .col
+            .card.pb-3.border-0
+              img.mb-3.img-fluid(src="https://via.placeholder.com/500x300", alt="")
+              ul.nav.flex-column.text-center
+                li.nav-item
+                  a.py-0.nav-link.text-dark.fw-bold(href="#") Nadřazená kategorie
+                  ul.nav.flex-column
+                    li.nav-item
+                      a.py-0.nav-link.text-dark(href="#") Název podkategorie
+                    li.nav-item
+                      a.py-0.nav-link.text-dark(href="#") Název podkategorie
+                    li.nav-item
+                      a.py-0.nav-link.text-dark(href="#") Název podkategorie
+                    li.nav-item
+                      a.py-0.nav-link.text-dark(href="#") Název podkategorie
+                    

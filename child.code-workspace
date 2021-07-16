@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Boilerplate Child",
+			"path": "."
+		},
+		{
+			"name": "→ SCSS",
+			"path": "src/scss"
+		},
+		{
+			"name": "→ Pages",
+			"path": "src/pages"
+		},
+		{
+			"name": "→ Views",
+			"path": "src/views"
+		},
+		{
+			"name": "→ Dist",
+			"path": "dist"
+		}
+	]
+}

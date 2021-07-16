@@ -61,12 +61,12 @@ jspm_packages/
 # *.code-workspace
 # *.codekit3
 
-# Explicit Allowed
-!.gitignore
 
 # ===========================================================
 
-# Boilerplate
 
+# Boilerplate Master
+
+!.gitignore
 /dist
 /tmp
