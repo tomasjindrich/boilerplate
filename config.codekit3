@@ -21,17 +21,17 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/.gitignore-child",
-      "oF" : 0
+      "oF" : 1
     },
     "\/.gitignore-master" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/.gitignore-master",
-      "oF" : 0
+      "oF" : 1
     },
     "\/.vscode" : {
       "ft" : 65536,
@@ -51,9 +51,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dist\/child.code-workspace",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dist" : {
       "ft" : 65536,
@@ -307,16 +307,11 @@
       "oAP" : "\/dist",
       "oF" : 3
     },
-    "\/src\/dummy\/sample.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 2,
-      "oA" : 0,
-      "oAP" : "\/dist\/dummy\/sample.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
+    "\/src\/dummy" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/dist\/dummy",
+      "oF" : 0
     },
     "\/src\/favicon" : {
       "ft" : 65536,
@@ -2559,7 +2554,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "log,\/.vscode,\/src\/views,\/src\/favicon,\/src\/data,includes,cache,node_modules,logs,_logs,copy,\/tmp,\/modules,_cache,\/storage\/framework\/sessions",
+    "skippedFoldersString" : "\/tmp,copy,\/storage\/framework\/sessions,node_modules,\/src\/data,log,_cache,includes,\/src\/favicon,\/src\/views,\/.vscode,cache,\/modules,logs,\/src\/dummy,_logs",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,
