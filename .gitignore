@@ -74,6 +74,9 @@ jspm_packages/
 /src/dummy/**/*
 /src/img/**/*
 /src/pages/**/*
-/src/dummy/**/*
+/src/scss/**/*
 
-
+# Explicit Allowed
+!*-sample*
+!/src/scss/settings.scss
+!/src/scss/theme.scss
