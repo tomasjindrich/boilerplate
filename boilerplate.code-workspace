@@ -13,39 +13,12 @@
 			"path": "src/pages"
 		},
 		{
-			"name": "→ Blocks",
-			"path": "src/views/blocks"
-		},
-		{
 			"name": "→ Views",
 			"path": "src/views"
 		},
 		{
-			"name": "→ Custom",
-			"path": "src/views/custom"
-		},
-		{
 			"name": "→ Dist",
 			"path": "dist"
-		},
-		{
-			"name": "* * * * * * * *",
-			"path": "../../templates/folder-parsers/* * * * * * * *"
-		},
-		{
-			"name": "🌶 Asassin",
-			"path": "../../Framework/asassin"
-		},
-		{ "name": "🌳 Statica",
-			"path": "../../Framework/statica"
-		},
-		{
-			"name": "📍 Framework",
-			"path": "../../Framework"
-		},
-		{
-			"name": "⚙️ Projects",
-			"path": "../.."
 		},
 	],
 	"settings": {

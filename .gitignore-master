@@ -57,10 +57,6 @@ jspm_packages/
 .yarn/install-state.gz
 .pnp.*
 
-# Custom
-# *.code-workspace
-# *.codekit3
-
 
 # ===========================================================
 
