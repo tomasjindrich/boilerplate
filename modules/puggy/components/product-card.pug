@@ -1,0 +1,42 @@
+mixin productCard
+  -
+    var dummy = new Dummy();
+    var block = {
+      title: dummy.randomText('title'),
+      description: dummy.randomText('description'),
+      imgSrc: "img/dummy/"+ dummy.randomNum(1,20) +".jpg",
+      //- imgSrc: "https://via.placeholder.com/500x500",
+      imgAlt: dummy.randomText('title'),
+      priceVat: dummy.priceVat(),
+      priceNoVat: dummy.priceNoVat(),
+      discount: dummy.randomNum(15,35),
+    };
+    
+  .col
+    .card.product-card.h-100
+      a(href="")
+        .ratio.ratio-1x1
+          .p-3.d-flex.align-items-center.justify-content-center
+            img.mw-100.mh-100(src= block.imgSrc, alt= block.imgAlt) 
+          //- badge container
+          .ps-2.pt-1.text-start
+            if dummy.fortune(20)
+              .badge.bg-warning.text-dark -#{block.discount} %
+            if dummy.fortune(20)
+              .badge.bg-success Novinka
+            if dummy.fortune(10)
+              .badge.bg-info Výprodej
+            if dummy.fortune(5)
+              .badge.bg-danger Poslední kusy
+      
+      .card-body.d-flex.flex-column.text-center.p-3
+        
+        a.card-title.text-reset.text-decoration-none.fw-bold.lh-sm(href="") #{block.sequence} #{block.title}
+        .card-text.lh-sm.fs-8 #{block.description}
+        
+        .mt-3.d-flex.flex-fill.justify-content-between.align-items-end
+          .text-start.text-nowrap.lh-1
+            .mb-1.fs-5.fw-bold.text-danger(aria-label="Cena s DPH") #{block.priceVat}
+            .fs-9(aria-label="cena bez DPH") bez DPH 
+              span.fw-bold #{block.priceNoVat}
+          a.btn.btn-outline-primary(href="#") Koupit

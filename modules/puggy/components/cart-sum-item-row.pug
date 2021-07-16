@@ -1,0 +1,31 @@
+mixin cartSumItemRow
+  -
+    var dummy = new Dummy();
+    var block = {
+      title: dummy.randomText('title'),
+      description: dummy.randomText('description'),
+      priceVat: dummy.priceVat(),
+      imgSrc: "img/dummy/"+ dummy.randomNum(1,20) +".jpg",
+      //- imgSrc: "https://via.placeholder.com/500x500",
+      imgAlt: dummy.randomText('title'),
+      priceNoVat: dummy.priceNoVat(),
+      quantity: dummy.randomNum(1,5)*100
+    };
+
+  .item-row.fs-8.text-muted.border-bottom.border-200
+    .item-row-group.flex-grow-1
+      //- .item-row-col.d-none.d-sm-block
+      //-   .w-2rem
+      //-     a(href='#')
+      //-       img.img-fluid(src= block.imgSrc, alt='placeholder')
+      .item-row-col
+        .fs-7.fw-bold
+          a.link-dark.text-decoration-none(href='#') #{block.title}
+    .item-row-group
+      .item-row-col
+        | 1&times;
+      .item-row-group.d-block.d-md-flex
+        .item-row-col.w-5rem.text-end
+          .text-nowrap #{block.priceNoVat}
+        .item-row-col.w-5rem.text-end
+          .text-nowrap #{block.priceVat}

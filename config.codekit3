@@ -17,6 +17,22 @@
       "oAP" : "\/dist\/.gitignore",
       "oF" : 1
     },
+    "\/.vscode\/boilerplate.code-snippets" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/.vscode\/boilerplate.code-snippets",
+      "oF" : 0
+    },
+    "\/.vscode\/extensions.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/dist\/.vscode\/extensions-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
     "\/boilerplate.code-workspace" : {
       "cB" : 0,
       "ft" : 8192,
@@ -41,6 +57,186 @@
       "oF" : 1,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/modules" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/dist\/modules",
+      "oF" : 0
+    },
+    "\/modules\/puggy\/components\/breadcrumbs.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/breadcrumbs.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/cart-item-row.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/cart-item-row.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/cart-sum-item-row.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/cart-sum-item-row.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/form-check.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/form-check.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/form-control.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/form-control.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/step.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/step.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/components\/steps.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/steps.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/mixins.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/devInfo.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/devInfo.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/icon.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/icon.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/imgAdvance.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/imgAdvance.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/menuLink.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/menuLink.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/newLine.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/newLine.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/mixins\/repeat.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/repeat.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/templates\/core.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/core.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/modules\/puggy\/templates\/master.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dist\/master.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/dist\/node_modules",
+      "oF" : 0
+    },
+    "\/package-lock.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/dist\/package-lock-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/package.json" : {
       "ft" : 524288,
@@ -69,6 +265,17 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/server.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 2,
+      "oA" : 0,
+      "oAP" : "\/dist\/server.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/settings.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -86,17 +293,323 @@
       "oAP" : "\/dist",
       "oF" : 3
     },
-    "\/src\/data" : {
-      "ft" : 65536,
-      "oA" : 1,
-      "oAP" : "\/dist\/data",
-      "oF" : 0
+    "\/src\/dummy\/img\/1.jpg" : {
+      "ft" : 16384,
+      "iS" : 8651,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/2.jpg" : {
+      "ft" : 16384,
+      "iS" : 10454,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/3.jpg" : {
+      "ft" : 16384,
+      "iS" : 2895,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/4.jpg" : {
+      "ft" : 16384,
+      "iS" : 9136,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/5.jpg" : {
+      "ft" : 16384,
+      "iS" : 8634,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/5.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/6.jpg" : {
+      "ft" : 16384,
+      "iS" : 20534,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/6.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/7.jpg" : {
+      "ft" : 16384,
+      "iS" : 18334,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/7.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/8.jpg" : {
+      "ft" : 16384,
+      "iS" : 29335,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/8.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/9.jpg" : {
+      "ft" : 16384,
+      "iS" : 22537,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/9.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/10.jpg" : {
+      "ft" : 16384,
+      "iS" : 19921,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/10.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/11.jpg" : {
+      "ft" : 16384,
+      "iS" : 24010,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/11.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/12.jpg" : {
+      "ft" : 16384,
+      "iS" : 16774,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/12.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/13.jpg" : {
+      "ft" : 16384,
+      "iS" : 14035,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/13.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/14.jpg" : {
+      "ft" : 16384,
+      "iS" : 17640,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/14.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/15.jpg" : {
+      "ft" : 16384,
+      "iS" : 17327,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/15.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/16.jpg" : {
+      "ft" : 16384,
+      "iS" : 19241,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/16.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/17.jpg" : {
+      "ft" : 16384,
+      "iS" : 14745,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/17.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/18.jpg" : {
+      "ft" : 16384,
+      "iS" : 18440,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/18.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/19.jpg" : {
+      "ft" : 16384,
+      "iS" : 19151,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/19.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/20.jpg" : {
+      "ft" : 16384,
+      "iS" : 17154,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/20.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/21.jpg" : {
+      "ft" : 16384,
+      "iS" : 27532,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/21.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/22.jpg" : {
+      "ft" : 16384,
+      "iS" : 24270,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/22.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/src\/dummy\/img\/23.jpg" : {
+      "ft" : 16384,
+      "iS" : 18201,
+      "jF" : 0,
+      "oA" : 2,
+      "oAP" : "\/dist\/dummy\/img\/23.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/src\/favicon" : {
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/dist\/favicon",
       "oF" : 0
+    },
+    "\/src\/img\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 4761,
+      "oA" : 0,
+      "oAP" : "\/dist\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/src\/js\/scripts.js" : {
       "bF" : 0,
@@ -108,6 +621,26 @@
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/src\/pages\/homepage.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/homepage.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/src\/pages\/kategorie.pug" : {
+      "cB" : 0,
+      "cOD" : 1,
+      "ft" : 512,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dist\/kategorie.html",
+      "oF" : 0,
+      "oS" : 0
     },
     "\/src\/pages\/kosik-1-obsah-kosiku.pug" : {
       "cB" : 0,
@@ -207,36 +740,6 @@
       "oAP" : "\/dist\/views",
       "oF" : 0
     },
-    "\/src\/views\/blocks\/ecommerce\/cart-item-row.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/cart-item-row.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/blocks\/ecommerce\/cart-sum-item-row.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/cart-sum-item-row.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/blocks\/header.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/header.html",
-      "oF" : 0,
-      "oS" : 0
-    },
     "\/src\/views\/components.pug" : {
       "cB" : 0,
       "cOD" : 1,
@@ -247,133 +750,43 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/components\/form-check.pug" : {
+    "\/src\/views\/components\/footer.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/form-check.html",
+      "oAP" : "\/dist\/footer.html",
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/components\/form-control.pug" : {
+    "\/src\/views\/components\/header.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/form-control.html",
+      "oAP" : "\/dist\/header.html",
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/components\/step.pug" : {
+    "\/src\/views\/components\/product-card.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/step.html",
+      "oAP" : "\/dist\/product-card.html",
       "oF" : 0,
       "oS" : 0
     },
-    "\/src\/views\/components\/steps.pug" : {
+    "\/src\/views\/components\/sidebar.pug" : {
       "cB" : 0,
       "cOD" : 1,
       "ft" : 512,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dist\/steps.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/custom\/blocks\/ecommerce\/cart-item-row.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/cart-item-row.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/custom\/templates\/base.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/base.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/mixins.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/devInfo.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/devInfo.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/icon.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/icon.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/imgAdvance.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/imgAdvance.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/menuLink.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/menuLink.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/newLine.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/newLine.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/mixins\/repeat.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/repeat.html",
+      "oAP" : "\/dist\/sidebar.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -384,16 +797,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dist\/base.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/src\/views\/templates\/core.pug" : {
-      "cB" : 0,
-      "cOD" : 1,
-      "ft" : 512,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dist\/core.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -2504,7 +2907,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "_logs,\/src\/views,node_modules,cache,\/src\/data,\/tmp,\/storage\/framework\/sessions,includes,log,_cache,logs,\/src\/favicon,copy",
+    "skippedFoldersString" : "\/tmp,\/storage\/framework\/sessions,\/src\/views,\/src\/favicon,\/src\/data,node_modules,\/modules,_logs,logs,log,includes,copy,_cache,cache",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,

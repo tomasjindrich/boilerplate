@@ -1,0 +1,12 @@
+mixin repeat(num)
+  if block
+    //- - let repeater = new Repeater();
+    - var n = 0;
+    while n < num
+      block
+      //- - repeater.up();
+      - n++
+
+    
+  else
+    | Není co vopakovat!

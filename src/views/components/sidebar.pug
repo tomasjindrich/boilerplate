@@ -1,0 +1,29 @@
+ul.nav.flex-column.bg-white
+  li.nav-item
+    a.nav-link.text-dark.fw-bold.active(aria-current="page", href="#")
+      i.bi-chevron-right.me-2
+      | Výprodej
+  li.nav-item
+    a.nav-link.text-dark.fw-bold(href="#")
+      i.bi-chevron-right.me-2
+      | Totální výprodej
+    ul.nav.flex-column
+
+      -
+        var list = [
+          'Nápojové kelímky',
+          'Jednorázové nádobí',
+          'Papírové obaly',
+          'Plastové sáčky, tašky a pytle',
+          'BIO kompostovatelné obaly',
+          'Čistící a úklidové prostředky',
+          'Kompostéry',
+          'Opakovaně použitelné produkty',
+        ]
+      
+      each val in list 
+
+        li.nav-item
+          a.d-flex.nav-link.text-dark(href="#")
+            span #{val}
+            i.bi-chevron-right.ms-auto

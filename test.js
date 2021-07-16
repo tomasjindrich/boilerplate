@@ -1,15 +1,12 @@
-var { getSettings, settings, path, conf, site, page } = require('statica/core/settings.js');
-var { test, root } =  require('statica/tools/tools.js');
-settings = getSettings( require('./settings.js') );
 
-console.log(test())
-console.log(site('url'))
+var appRoot = require('app-root-path');
 
-// console.log(site('og_title'))
-console.log(conf('host_prod'))
-// console.log(conf('host'))
-console.log( path('dist') + '/**/*.' + conf('page_file_ext') )
+// Statica Framework
+var { getSettings, path, conf, site, page } = require('statica/core/settings.js');
+var { getAttachedFile, getPermalink, Dummy, Repeater} =  require('statica/tools/tools.js');
 
-      
-  
+// default + custom settings
+var settings = getSettings( require(appRoot +'/settings.js') );
 
+console.log(site('name'));
+console.log(page('title_preset'));

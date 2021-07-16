@@ -3,7 +3,11 @@
 ## TODO
     * vytáhnout z bootstrap-override samostatný bootstrap-extension
     * bootstrap-custom, úplný rebuild bootstrap.css
-    
+
+## IDEA
+    * views/source (resolver)
+    * views/custom 
+    * views/library
 
 ## SASS
 

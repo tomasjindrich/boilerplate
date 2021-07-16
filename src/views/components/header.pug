@@ -1,0 +1,59 @@
+header.header
+  
+  .bg-secondary
+    .container-xxl
+      .text-light.fs-6.py-2
+        | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, id?
+  
+  .bg-white.py-3
+    .container-xxl
+      .d-flex.align-items-center
+
+        a(href="./").mw-14rem
+          img.img-fluid(src= getAttachedFile('img/logo.png') , alt="")
+        
+        form.d-flex.ms-5
+          input.form-control(type="text", placeholder="Co hledáte?", aria-label="Vyhledávání")
+          button.btn.btn-primary
+            i.bi-search
+        
+        nav.d-flex.text-center.lh-sm.ms-auto
+
+          a(href="#").nav-link.link-primary
+            i.bi-star-fill.d-block.fs-3.text-primary-light
+            | Oblíbené 
+
+          a(href="#").nav-link
+            i.bi-file-earmark-text.d-block.fs-3.text-primary-light
+            | Katalogy
+          
+          a(href="#").nav-link
+            i.bi-person-fill.d-block.fs-3.text-primary-light
+            | Přihlásit se
+          
+          a(href="#").nav-link
+            i.bi-cart-fill.d-block.fs-3.text-primary-light
+            | Košík
+  
+  .bg-primary
+    .container-xxl
+      .d-flex.align-items-center
+
+        .w-16rem.p-3.bg-primary-light.text-light.text-uppercase Kategorie
+
+        ul.ms-4.nav.text-uppercase.text-light
+          li.nav-item
+            a.nav-link.text-reset.active(aria-current="page", href="#") Úvod
+          li.nav-item
+            a.nav-link.text-reset(href="#") Obchodní podmínky
+          li.nav-item
+            a.nav-link.text-reset(href="#") Doprava
+          li.nav-item
+            a.nav-link.text-reset(href="#") Platba
+          li.nav-item
+            a.nav-link.text-reset(href="#") Kontakt
+
+
+    
+
+        

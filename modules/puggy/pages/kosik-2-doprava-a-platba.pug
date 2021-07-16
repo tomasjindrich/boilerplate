@@ -1,0 +1,61 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  //- - settings.page.group = "";
+  - settings.page.title_base = "Doprava a platba";
+  //- - settings.page.description = "";
+  - var dummy = new Dummy();
+
+block append content
+
+  .group-of-steps.mb-5.d-none.d-sm-flex
+    +step('Košík','1').step-done
+    +step('Doprava a platba','2').step-active
+    +step('Dodací údaje','3')
+    +step('Souhrn a odeslání','4')
+  
+
+  h1.fs-3.mb-3 Doprava
+  .group-of-item-rows.mb-5
+
+    
+
+    each block in dummy.getList('payment')
+
+      .item-row.border-bottom.border-g200.py-2
+        .w-16rem
+          .form-check.form-check-inline
+            input.form-check-input(type='checkbox', value='', id='')
+            label.form-check-label(for='') #{block.item}
+        .item-row-col.w-5rem
+          span.fs-7 #{block.price}
+        .item-row-col
+          span.text-muted.fs-7 #{block.note}
+
+
+
+  h1.fs-3.mb-3 Platba
+  .group-of-item-rows.mb-5
+    
+    each block in dummy.getList('shipment')
+
+      .item-row.border-bottom.border-g200.py-2
+        .w-16rem
+          .form-check.form-check-inline
+            input.form-check-input(type='checkbox', value='', id='')
+            label.form-check-label(for='') #{block.item}
+        .item-row-col.w-5rem
+          span.fs-7 #{block.price}
+        .item-row-col
+          span.text-muted.fs-7 #{block.note}
+    
+  
+  .row.row-cols-1.row-cols-sm-2
+    .col.mb-4
+      a.link-muted(href="kosik-1-obsah-kosiku.html")
+        i.me-1.bi.bi-chevron-left
+        | Zpět na položky košíku
+    .col.text-end
+      a.btn.btn-xl.btn-primary(href='kosik-3-dodaci-udaje.html')
+        | Dodací údaje
+        i.bi.bi-chevron-right.ms-3

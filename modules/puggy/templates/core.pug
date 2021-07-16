@@ -1,0 +1,41 @@
+//- Pouze základní js, struktura a importy
+
+-
+  var appRoot = require('app-root-path');
+
+  // Statica Framework
+  var { getSettings, path, conf, site, page } = require('statica/core/settings.js');
+  var { getAttachedFile, getPermalink, Dummy, Repeater} =  require('statica/tools/tools.js');
+  
+  // default + custom settings
+  var settings = getSettings( require(appRoot +'/settings.js') );
+
+include ../mixins
+include /src/views/components
+
+block settings-default
+block settings-custom 
+block settings-page
+
+doctype html
+html
+  
+  block head-wrap
+    head
+      block head
+        block title
+        block description
+        block favicon
+        block social
+        block style-internal
+        block styles
+        block fonts
+  
+  body
+    block body
+      block top
+      block header
+      block main
+      block footer
+      block bottom
+

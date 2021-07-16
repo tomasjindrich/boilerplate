@@ -6,36 +6,41 @@
 // vloží znovu vygenerované reboot hodnoty, fonty, barvy atd
 $module-bootstrap-override-reboot: true;
 
+// negativní marginy: defaultně nejsou v dist verzi bootstrapu vygenerovány 
+$process-negative-margins: true;
+
 //  *  *  *
 
 // updated theme colors
-$primary:       #8bca7e;
-$secondary:     #ffd772;
+$primary:       #0b5626; 
+
+$secondary:     #1c2536;
 $success:       $primary;
 
 // updated colors
 $green:         $primary;
 
-$background-colors-append: (
-  "primary-lighter": tint-color($primary, 80%),
-  "primary-light": tint-color($primary, 40%),
-  "primary-dark": shade-color($primary, 20%),
-  "primary-darker": shade-color($primary, 40%),
-);
+// new colors
+$primary-light: #368618;
+$color-santafe: #b6704e;
 
-// barvy které chci předat pouze .text-color classes
-// přepíše všechna původní nastavení.
-$text-colors-append: map-merge((
+// všem  utility třídám a komponentám nastav...
+$utility-colors-append: map-merge((
+  "primary-light": $primary-light,
+), $grays);
+
+// specifickým utility třídám navíc přidej...
+$text-colors-append: (
+  "color-santafe": $color-santafe,
   "muted": $gray-500,
-  // "muted": $gray-500,
-  // "muted": $gray-500,
-  ), $grays);
+);
+  
 
 //  *  *  *
 
 // Typografie
-// $font-family-base     : 'PT Sans', sans-serif;
-// $headings-font-family : 'Poppins', sans-serif;
+$font-family-base     : 'PT Sans', sans-serif;
+$headings-font-family : 'Poppins', sans-serif;
 $body-color           : $gray-900; // barva textu
 $headings-color       : $primary; // barva headings, titulků
 $link-color           : $secondary;
@@ -45,5 +50,3 @@ $link-hover-color     : shift-color($link-color, $link-shade-percentage);
 //  *  *  * STOP EDITING HERE
 
 
-// všem výše nespecifikovaným utility třídám a komponentám nastav...
-$utility-colors-append: ($grays);
