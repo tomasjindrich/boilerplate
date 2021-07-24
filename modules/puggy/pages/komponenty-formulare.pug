@@ -1,13 +1,12 @@
-extends /src/views/custom/templates/base
+extends /src/views/templates/base
 
 block append settings-page 
-  - settings.page.group = "homepage";
-  //- - settings.page.title_base = "";
+  - var page = new Page('Komponenty Formuláře');
+  //- - settings.page.title.base = "Komponenty Formuláře";
+  //- - settings.page.group = "";
   //- - settings.page.description = "";
 
 block append content
-  
-  .container-fluid.container-narrow.my-5
     
     .row.row-cols-1.row-cols-sm-2.gx-5
       .col

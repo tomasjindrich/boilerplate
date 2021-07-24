@@ -1,0 +1,32 @@
+@import '../mixins/increment';
+
+// width rem
+@include increment('w', 'rem', 'width', 'rem', 1, 1, 5); // 1-5
+@include increment('w', 'rem', 'width', 'rem', 6, 2, 18); // 6-18
+@include increment('w', 'rem', 'width', 'rem', 20, 10, 80); // 20-80
+
+// max-width rem
+@include increment('mw', 'rem', 'max-width', 'rem', 1, 1, 5); // 1-5
+@include increment('mw', 'rem', 'max-width', 'rem', 6, 2, 18); // 6-18
+@include increment('mw', 'rem', 'max-width', 'rem', 20, 10, 80); // 20-80
+
+// min-width rem
+@include increment('minw', 'rem', 'min-width', 'rem', 1, 1, 5); // 1-5
+@include increment('minw', 'rem', 'min-width', 'rem', 6, 2, 18); // 6-18
+@include increment('minw', 'rem', 'min-width', 'rem', 20, 10, 80); // 20-80
+
+
+// height rem
+@include increment('h', 'rem', 'height', 'rem', 1, 1, 5); // 1-5
+@include increment('h', 'rem', 'height', 'rem', 6, 2, 18); // 6-18
+@include increment('h', 'rem', 'height', 'rem', 20, 10, 80); // 20-80
+
+// max-height rem
+@include increment('mh', 'rem', 'max-height', 'rem', 1, 1, 5); // 1-5
+@include increment('mh', 'rem', 'max-height', 'rem', 6, 2, 18); // 6-18
+@include increment('mh', 'rem', 'max-height', 'rem', 20, 10, 80); // 20-80
+
+// min-height rem
+@include increment('minh', 'rem', 'min-height', 'rem', 1, 1, 5); // 1-5
+@include increment('minh', 'rem', 'min-height', 'rem', 6, 2, 18); // 6-18
+@include increment('minh', 'rem', 'min-height', 'rem', 20, 10, 80); // 20-80

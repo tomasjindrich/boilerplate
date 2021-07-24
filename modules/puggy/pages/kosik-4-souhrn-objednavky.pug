@@ -1,15 +1,18 @@
 extends /src/views/templates/base
 
 block append settings-page 
-  - settings.page.group = "homepage";
-  //- - settings.page.title_base = "";
+  - var page = new Page('Kategorie');
+
+  //- - settings.page.group = "";
+  //- - settings.page.title.base = "Souhrn objednávky";
   //- - settings.page.description = "";
+
 
 block append content
   
-  .container-fluid.container-narrow.my-5
+  .px-lg-5
 
-    .group-of-steps.mb-5.d-none.d-sm-flex
+    .group-of-steps.my-5.d-none.d-sm-flex
       +step('Košík','1').step-done
       +step('Doprava a platba','2').step-done
       +step('Dodací údaje','3').step-done

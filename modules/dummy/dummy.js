@@ -1,69 +1,5 @@
 module.exports = {
 
-  payment: [{
-      item: 'Hotově na prodejně',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Dobírka',
-      price: '30,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Bankovní převod',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Platební karta',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Platební brána Comgate',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Platební brána Gopay',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    }
-  ],
-
-  shipment: [{
-      item: 'Osobní odběr',
-      price: '0,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Česká pošta',
-      price: '99,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'DPD',
-      price: '119,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'DHL',
-      price: '119,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Lokální kurýr',
-      price: '89,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    },
-    {
-      item: 'Zásilkovna',
-      price: '69,-',
-      note: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, nemo.'
-    }
-  ],
-
   lorem: [
     'Prožíváme-li delší dobu idylu, přestaneme ji vnímat, a osud by nám prokázal neocenitelnou službu, kdyby nás popadl za límec a vyhodil dočasně na mráz.',
     'Vy, kdož jste nad námi zvítězili, řekněte si sami pro sebe, že Babylon padl a že jeho stavby byly vyvráceny. Já vám přese všechno říkám, že člověk zůstává, aby byl souzen, každý na své vlastní lavici obžalovaných. Každý člověk je malá válka.',
@@ -76,7 +12,7 @@ module.exports = {
 
   lorem80: [
   'Prožíváme-li delší dobu idylu, přestaneme ji vnímat, a osud by nám prokázal.',
-  'neocenitelnou službu, kdyby nás popadl za límec a vyhodil dočasně na mráz.',
+  'Neocenitelnou službu, kdyby nás popadl za límec a vyhodil dočasně na mráz.',
   'Vy, kdož jste nad námi zvítězili, řekněte si sami pro sebe, že Babylon padl.',
   'A že jeho stavby byly vyvráceny. Já vám přese všechno říkám, že zůstává.',
   'Aby byl souzen, každý na své vlastní lavici obžalovaných. Každý je malá.',
@@ -97,10 +33,18 @@ module.exports = {
   'Popošel k oknu: malá, křehká postava, jejíž vyzáblost zvýrazňovala modrá.',
   'Vlasy měl velmi světlé, tvář přirozeně ruměnou, pokožku zhrublou od mýdla.',
   'Svět venku vypadal i přes zavřené okno studeně. Na ulici vítr vířil prach.',
-  'A třebaže svítilo slunko a obloha byla ostře modrá, zdálo se, jako by nic.'
-  ],
+  'A třebaže svítilo slunko a obloha byla ostře modrá, zdálo se, jako by nic.',
+  'V době Cimrmanova hereckého kočování byla většina hospodských sálů a sokoloven.',
+  'Již elektrifikována. Ale poměrně často se stávalo, že uprostřed představení. ',
+  'Došlo k přerušení dodávky proudu a celé divadlo se ponořilo do tmy zapalovat. ',
+  'Svíčky či petrolejové lampy bylo po požáru Národního divadla přísně zakázáno. ',
+  'Muselo se tedy čekat, až se závada odstraní. Pro tyto nepříjemné chvíle čekání.',
+  'Napsal Cimrman vtipnou scénickou vložku, která se celá odehrávala potmě. ',
+  'Když jsme ji v pozůstalosti herce Oty Plka našli, uvědomili jsme si, že tu. ',
+  'Jára Cimrman dávno před vynálezem rozhlasu položil základy k rozhlasové hře. ',
+],
 
-  books: [
+  bookTitles: [
     'Enderova hra',
     'Mluvčí za mrtvé',
     'Xenocida',
@@ -212,20 +156,6 @@ module.exports = {
     'Řvi potichu, brácho',
     'Slavík'
   ],
-
-  dekos: [
-    'Kelímek papírový BIO-ECO BAMBOO 8oz 200/250ml',
-    'Krabice na pizzu 32x32x3cm mvl bílá s potiskem PIZZA',
-    'Miska PP 243x208x41/30mm 2-dílná černá s víkem PP transparentní',
-    'Miska papírová na ovoce 500g, 180x100x83/105mm hnědá s potiskem',
-    'Košík papírový na ovoce 2000g, 390x120x125mm hnědý s potiskem',
-    'Víčko BIO z cukrové třtiny s otvorem na kelímek papírový 12-20oz 300-600ml bílé',
-    'Sáček na hamburger S "Pure Paper" papír natur s odtrhem 15x8,5/8,5x16,5cm',
-    'Kelímek papírový WRAP 100/110ml 4oz embossed černý 63mm',
-    'Nůž dřevěný 16,5cm',
-    'Burger box 185x145mm bílý',
-    'Menubox 1-dílný, 2 zámkový bílý'
-  ]
 
 }
 

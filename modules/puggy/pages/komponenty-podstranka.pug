@@ -1,36 +1,46 @@
-extends /src/views/custom/templates/base
+extends /src/views/templates/base
 
 block append settings-page 
-  - settings.page.group = "homepage";
-  //- - settings.page.title_base = "";
+  - var page = new Page('Kategorie');
+
+  //- - settings.page.title.base = "Komponenty Obecná podstránka";
+  //- - settings.page.group = "";
   //- - settings.page.description = "";
 
 block append content
 
-  .container-fluid.p-5(style="max-width: 50rem")
+    +breadcrumb
 
-    .section
+    .section-xs
       h1.text-secondary Obecná podstránka
-      p.lead.mb-5 Podtitulek nebo krátký sumář textu
+      p.lead.mb-3.mb-md-5 Podtitulek nebo krátký sumář textu
       p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam qui totam maxime quod. Nihil atque consequatur deserunt quisquam necessitatibus dicta ducimus, eaque odio porro provident at quo voluptatibus sunt tempora sit libero nostrum doloremque quos repellat rerum vel deleniti assumenda odit labore! Id ratione doloremque magni voluptatibus cumque quidem excepturi!
       p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga nam unde praesentium! Nostrum aliquam commodi distinctio assumenda? Fuga doloremque facere tenetur laborum harum suscipit dolor, ex dolorum pariatur, atque repellat iste ullam rem minima rerum ea consequuntur quae culpa tempore.
 
-    .section
-      .row.row-cols-1.row-cols-md-2.gx-5
+    .section-xs
+      .row.row-cols-1.row-cols-md-3
         
         .col
-          .card.text-center.py-4.my-2
-            i.bi.bi-check-circle-fill.display-4.text-secondary.mb-3
-            .fs-5.font-heading.fw-bold Box s ikonkou
-            p.text-muted.fs-7 Krátký text nebo podtitulek
+          .py-4.my-2.card.text-center.bg-primary-soft.border-0
+            i.bi.bi-check-circle-fill.display-4.text-primary.mb-3.mt-md-3
+            .fs-3.font-heading.fw-bold.text-secondary Box s ikonkou
+            p.text-primary-dark Krátký text nebo podtitulek
+        
+        .col
+          .py-4.my-2.card.text-center.border-primary
+            i.bi.bi-check-circle-fill.display-4.text-primary.mb-3.mt-md-3
+            .fs-3.font-heading.fw-bold Box s ikonkou
+            p.text-muted Krátký text nebo podtitulek
 
         .col
-          .card.text-center.py-4.my-2
-            i.bi.bi-check-circle-fill.display-4.text-secondary.mb-3
-            .fs-5.font-heading.fw-bold Box s ikonkou
-            p.text-muted.fs-7 Krátký text nebo podtitulek
+          .py-4.my-2.card.text-center.border-300
+            i.bi.bi-check-circle-fill.display-4.text-primary.mb-3.mt-md-3
+            .fs-3.font-heading.fw-bold Box s ikonkou
+            p.text-muted Krátký text nebo podtitulek
 
-    .section
+      
+
+    .section-xs
       .bg-primary.text-light.p-5
         .row
           .col-auto.me-auto.font-heading.mb-4
@@ -41,14 +51,14 @@ block append content
               | Tlačítko
               i.bi.bi-chevron-right.ms-2
 
-    .section
+    .section-xs
       h2.mb-4 Obrázek s textem
       .clearfix
         img.col-md-6.float-md-end.mb-3.ms-md-3.img-fluid(src="https://via.placeholder.com/600x400", alt="...")
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae dolorum esse provident odio, eos illo beatae, ut corrupti libero dolorem asperiores culpa tempore alias? Eos velit suscipit in obcaecati nam ex facilis animi porro dolor dolores error laboriosam molestias, aspernatur aut ad fuga eaque distinctio sit saepe officia similique?  
         p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ipsam, doloremque pariatur eaque, repellat officiis dolore aperiam autem maxime voluptates provident impedit et? Repellendus praesentium dolores commodi voluptatum ad accusamus pariatur ex architecto, laboriosam asperiores voluptates debitis itaque autem saepe minus deleniti sunt error explicabo? Aliquid, ratione. Deserunt, sequi vero!
 
-    .section
+    .section-xs
       h2.mb-4 Seznamy a odrážky
       .row.row-cols-1.row-cols-md-2.gy-4
         .col 
@@ -78,60 +88,59 @@ block append content
             li Eget porttitor lorem
         
         .col
-          .icon-list
-            .item-row.py-1 
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Lorem ipsum dolor sit amet
-            .item-row.py-1
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Consectetur adipiscing elit
-            .item-row.py-1
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Integer molestie lorem at massa
-            .item-row.py-1
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Facilisis in pretium nisl aliquet
-            .item-row.py-1
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Nulla volutpat aliquam velit
-            .item-row.py-1 
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Faucibus porta lacus fringilla vel
-            .item-row.py-1  
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Aenean sit amet erat nunc
-            .item-row.py-1  
-              i.bi.bi-check-circle-fill.fs-8.text-secondary.w-1-5
-              div Eget porttitor lorem
+          .py-1 
+            i.me-2.bi-check-circle-fill.text-primary
+            | Lorem ipsum dolor sit amet
+          .py-1
+            i.me-2.bi-check-circle-fill.text-primary
+            | Consectetur adipiscing elit
+          .py-1
+            i.me-2.bi-check-circle-fill.text-primary
+            | Integer molestie lorem at massa
+          .py-1
+            i.me-2.bi-check-circle-fill.text-primary
+            | Facilisis in pretium nisl aliquet
+          .py-1
+            i.me-2.bi-check-circle-fill.text-primary
+            | Nulla volutpat aliquam velit
+          .py-1 
+            i.me-2.bi-check-circle-fill.text-primary
+            | Faucibus porta lacus fringilla vel
+          .py-1  
+            i.me-2.bi-check-circle-fill.text-primary
+            | Aenean sit amet erat nunc
+          .py-1  
+            i.me-2.bi-check-circle-fill.text-primary
+            | Eget porttitor lorem
         
         .col
-          .icon-list
-            .item-row.py-1 
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Lorem ipsum dolor sit amet
-            .item-row.py-1
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Consectetur adipiscing elit
-            .item-row.py-1
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Integer molestie lorem at massa
-            .item-row.py-1
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Facilisis in pretium nisl aliquet
-            .item-row.py-1
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Nulla volutpat aliquam velit
-            .item-row.py-1 
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Faucibus porta lacus fringilla vel
-            .item-row.py-1  
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Aenean sit amet erat nunc
-            .item-row.py-1  
-              i.bi.bi-square-fill.fs-9.text-secondary.w-1-5
-              div Eget porttitor lorem
+          .py-1 
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Lorem ipsum dolor sit amet
+          .py-1
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Consectetur adipiscing elit
+          .py-1
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Integer molestie lorem at massa
+          .py-1
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Facilisis in pretium nisl aliquet
+          .py-1
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Nulla volutpat aliquam velit
+          .py-1 
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Faucibus porta lacus fringilla vel
+          .py-1  
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Aenean sit amet erat nunc
+          .py-1  
+            i.me-2.bi-square-fill.fs-9.text-primary
+            | Eget porttitor lorem
+        
 
-    .section
+    .section-xs
       h2.mb-4 Tabulka
       table.table.table-striped
         tr

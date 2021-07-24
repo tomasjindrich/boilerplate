@@ -3,12 +3,32 @@
 -
   var appRoot = require('app-root-path');
 
-  // Statica Framework
-  var { getSettings, path, conf, site, page } = require(appRoot + '/modules/statica/core/settings.js');
-  var { getAttachedFile, getPermalink, Dummy, Repeater} =  require(appRoot + '/modules/statica/tools/tools.js');
+  // Classes
+  var Settings = require(appRoot + '/modules/statica/classes/settingsClass.js');
+  var Page = require(appRoot + '/modules/statica/classes/pageClass.js');
+  var Data = require(appRoot + '/modules/statica/classes/dataClass.js');
+  var Dummy = require(appRoot + '/modules/statica/classes/dummyClass.js');
+
+  // Tools
+  var { get, trim, isDev, randomNum, getAttachedFile, getListOfPages } = require(appRoot + '/modules/statica/tools/tools.js');
+
+  // Variables Objects
+  var settings = new Settings();
   
-  // default + custom settings
-  var settings = getSettings( require(appRoot +'/settings.js') );
+  //- var Page = require(appRoot + '/modules/statica/classes/pageClass.js');
+  //- var page = new Page(settings.site);
+  
+  //- // Settings
+  //- var defaultSettings = require(appRoot + '/modules/statica/defaultSettings.js');
+  //- var customSettings = require(appRoot + '/config/settings.js');
+  //- var Settings = require(appRoot + '/modules/statica/classes/settingsClass.js');
+  //- var settings = new Settings(Object.assign(defaultSettings, customSettings));
+
+  //- // Tools
+
+
+  // Body Class Inicialization
+  var bodyClass = '';
 
 include ../mixins
 include /src/views/components
@@ -31,7 +51,7 @@ html
         block styles
         block fonts
   
-  body
+  body(class= bodyClass)
     block body
       block top
       block header

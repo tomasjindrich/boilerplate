@@ -1,34 +1,38 @@
 extends /src/views/templates/base
 
 block append settings-page 
+  - var page = new Page('Kategorie');
+
   //- - settings.page.group = "";
-  - settings.page.title_base = "Obsah košíku";
+  //- - settings.page.title.base = "Obsah košíku";
   //- - settings.page.description = "";
 
 block append content
+
+  .px-lg-5
     
-  .group-of-steps.mb-5.d-none.d-sm-flex
-    +step('Košík','1').step-active
-    +step('Doprava a platba','2')
-    +step('Dodací údaje','3')
-    +step('Souhrn a odeslání','4')
+    .group-of-steps.my-5.d-none.d-sm-flex
+      +step('Košík','1').step-active
+      +step('Doprava a platba','2')
+      +step('Dodací údaje','3')
+      +step('Souhrn a odeslání','4')
 
-  h1.fs-3.mb-4 Obsah košíku
-  .group-of-cart-item-rows.mb-5
+    h1.fs-3.mb-4 Obsah košíku
+    .group-of-cart-item-rows.mb-5
 
-    +repeat(12)
-      +cartItemRow
+      +repeat(12)
+        +cartItemRow
 
-  .text-end.my-3
-    .fs-5
-      | Celkem 
-      span.fw-bold 15
-      |  položek za 
-      span.fw-bold.text-success 9 745,44 Kč
-      |  s DPH
-    .fs-7 ( 7 654,23 Kč bez DPH )
-  
-  .text-end.mt-5
-    a.btn.btn-xl.btn-primary(href='kosik-2-doprava-a-platba.html')
-      | Doprava a platba
-      i.bi.bi-chevron-right.ms-3
+    .text-end.my-3
+      .fs-5
+        | Celkem 
+        span.fw-bold 15
+        |  položek za 
+        span.fw-bold.text-success 9 745,44 Kč
+        |  s DPH
+      .fs-7 ( 7 654,23 Kč bez DPH )
+
+    .text-end.mt-5
+      a.btn.btn-xl.btn-primary(href='kosik-2-doprava-a-platba.html')
+        | Doprava a platba
+        i.bi.bi-chevron-right.ms-3

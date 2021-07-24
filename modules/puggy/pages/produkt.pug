@@ -1,0 +1,107 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  - var page = new Page('Detail produktu');
+
+  //- - settings.page.title.base = "Detail produktu";
+  //- - settings.page.group = "";
+  //- - settings.page.description = "";
+
+block append content
+
+  +breadcrumb
+
+
+
+  .row.row-cols-1.row-cols-md-2.g-5
+
+    // Img Block
+    .col
+      .ratio.ratio-1x1.mb-3
+        img.mw-100.mh-100(src="img/dummy/pleny.jpg", alt= "")
+    
+    // Content block
+    .col
+      
+      h1.fs-2.fs-bold Bambo Nature 1, 2-4 kg
+      .mb-4
+        .fs-7 Kód produktu: 
+          span.text-600 342908
+        .fs-7 Kód SÚKL: 
+          span.text-600 56478
+        .fs-7.fw-bold.text-secondary Skladem nad 50 KS
+      
+      .mb-5
+        | Dětské univerzální plenkové kalhotky pro děvčátka i chlapce s prodyšným povrchem a se suchým zapínáním. 
+        a(href="#popis") více zde &hellip;
+
+      
+      .mb-3
+        .text-danger.fs-3.fw-bold 423 Kč 
+            span.fs-8 s DPH 
+        .fs-7 398 Kč 
+          span.text-muted cena bez DPH 
+      
+      .mb-5.d-flex
+        input.me-2.w-3rem.form-control.text-center.text-muted(type="text", value="1")
+        label.me-2.text-muted.fs-7.d-flex.align-items-center(for="")
+          span bal 
+        a.btn.btn-lg.btn-primary(href="#") Do košíku
+
+      .fs-7.text-muted 
+        i.bi-gem.me-1.text-secondary
+        | Zakoupením tohoto produktu získáte až 1 věrnostních bodů. Za obsah Vašeho košíku získáte celkem 1 bodů, které mohou být převedeny na slevový kupón v hodnotě 5 Kč.
+
+    
+    
+
+  .mt-5 
+    
+    h3.mb-4 Parametry 
+
+    table.table.table-hover.border.fs-7
+      tr 
+        th Počet kusů v balení:
+        td 22
+      tr
+        th Počet balení v kartonu:
+        td 6
+      tr  
+        th Váhová kategorie v kg:
+        td 2-4
+
+
+  div.mt-5
+
+    h3#popis.mb-4 Popis zboží
+
+    p Vyrábí ABENA A/S , Dánsko, s dodržením nejpřísnějších kritérií týkajících se výrobní technologie i použitých materiálů.
+
+    p
+      | O kvalitě plenkových kalhotek BAMBO Nature dostatečně vypovídá přidělení prestižní severské ekoznámky SWAN.
+      br
+      | Pro její obdržení musí výrobce splnit řadu přísných omezení – např. zákaz používání chlóru nebo jiných organických bělidel, parfémů nebo jakýchkoliv alergenů při výrobě atd.
+      br
+      | Hlavním kritériem je dosažení max. ochrany uživatele i životního prostředí při výrobě i recyklaci.
+    
+    h4.fs-6 Výhody plenkových kalhotek BAMBO Nature:
+
+    ul 
+      li TOP DRY – vnitřní povrch zajišťuje dokonalý pocit suchosti a bezpečí.
+      li Dvojité jádro se superabsorbentem mění okamžitě tekutinu na gel.
+      li Prodyšný a měkký povrch – pro maximální ochranu dětské pokožky.
+      li Odpružené bočnice a měkké okraje zajišťují dokonalé přilnutí plenky k tělu a umožňují dítěti volnost pohybu.
+      li Hypoalergenní – dermatologicky testováno.
+
+    h4.fs-6 Vlastnosti dětských ekoplen Bambo Nature:
+
+    ul
+      li Obsahují NOVÝ indikátor PH a vlhkosti. Pás změní barvu a připomene, že je čas kalhotky vyměnit.
+      li Zapínání na suché zipy.
+      li Super-absorpční jádro s unikátní vrstvou, která odčerpává vlhkost pryč od dětské pokožky, udržuje ji tak suchou i při opakovaném močení.
+      li Nové flexibilnější bočnice pro větší pohodlí snadnější a volnější pohyb Vašeho miminka.
+      li Prodyšná vnější vrstva umožňující přístup vzduchu k dětské pokožce, snižuje vlhkost a minimalizuje riziko podráždění pokožky Vašeho dítěte.
+      li Zapínání na suchý zip umožňuje otevírání a uzavírání pleny tak často, jak je potřeba.
+      li Díky pružným bočnicím s elastinem se mnohonásobně zvyšuje pohodlí a volnost pohybu miminka.
+      li Efektivní bariéry proti úniku moči.
+      li Super savé jádro zajistí vysokou absorpční kapacitu a suchý povrch plenky.

@@ -57,12 +57,24 @@ jspm_packages/
 .yarn/install-state.gz
 .pnp.*
 
+# Custom
+# *.code-workspace
+# *.codekit3
+
+# Explicit Allowed
+# !.gitignore
 
 # ===========================================================
 
-
-# Boilerplate Master
-
-!.gitignore
+# Boilerplate - Child!
+.gitignore
 /dist
+<<<<<<< HEAD
 /tmp
+=======
+/tmp
+/src
+
+*.code-workspace
+*.codekit3
+>>>>>>> b516913 (dd)

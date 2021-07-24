@@ -7,39 +7,33 @@ block prepend head
   meta(charset="UTF-8")
   meta(name="viewport", content="width=device-width,minimum-scale=1,initial-scale=1,viewport-fit=cover")
 
-block append title
-  title= page('title_preset')
-
 block append description  
-  meta(name="description", content= page('description'))
+  meta(name="description", content= get(page.description) )
     
 block append favicon
-  if conf('include_head_favicon')
+  if get(settings.render.head.favicon)
     +n
     //  Favicon
-    link(rel="apple-touch-icon", sizes="180x180", href= getAttachedFile(path('favicon') + "apple-touch-icon.png"))
-    link(rel="icon", type="image/png", sizes="32x32", href= getAttachedFile(path('favicon') + "favicon-32x32.png"))
-    link(rel="icon", type="image/png", sizes="16x16", href= getAttachedFile(path('favicon') + "favicon-16x16.png"))
-    link(rel="manifest", href= getAttachedFile(path('favicon') + "manifest.json"))
-    link(rel="mask-icon", href= getAttachedFile(path('favicon') + "safari-pinned-tab.svg", color="#222"))
-    link(rel="shortcut icon", href= getAttachedFile(path('favicon') + "favicon.ico"))
-    meta(name="msapplication-config", content= getAttachedFile(path('favicon') + "browserconfig.xml"))
-    meta(name="application-name", content= site('name'))
-    if site('theme_color')
-      meta(name="theme-color", content= site('theme_color'))
+    link(rel="apple-touch-icon", sizes="180x180", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/apple-touch-icon.png"))
+    link(rel="icon", type="image/png", sizes="32x32", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/favicon-32x32.png"))
+    link(rel="icon", type="image/png", sizes="16x16", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/favicon-16x16.png"))
+    link(rel="manifest", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/manifest.json"))
+    link(rel="mask-icon", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/safari-pinned-tab.svg", color="#222"))
+    link(rel="shortcut icon", href= getAttachedFile( get(settings.config.path.assets.favicon) + "/favicon.ico"))
+    meta(name="msapplication-config", content= getAttachedFile( get(settings.config.path.assets.favicon) + "/browserconfig.xml"))
+    meta(name="application-name", content= get(settings.site.name))
+    if get(settings.site.theme.color.primary)
+      meta(name="theme-color", content= get(settings.site.theme.color.primary))
 
 block append social
-  if conf('include_head_social')
+  if get(settings.render.head.social)
     +n
     // Social
-    meta(property="og:title", content= page('og_title'))
-    meta(property="og:description", content= page('og_description'))
-    if page('og_image_primary')
-      meta(property="og:image", content= getAttachedFile(page('og_image_primary')))
-    if page('og_image_secondary')
-      meta(property="og:image", content= getAttachedFile(page('og_image_secondary')))
-    meta(property="og:url", content= site('url'))
-    meta(property="og:site_name", content= site('name'))
+    meta(property="og:title", content= get(page.title) )
+    meta(property="og:description", content= get(page.og.og_description) )
+    meta(property="og:image", content= "")
+    meta(property="og:url", content= get(settings.site.url) )
+    meta(property="og:site_name", content= get(settings.site.url) )
     meta(property="og:type", content="website")
 
 block append style-internal
@@ -57,22 +51,22 @@ block append fonts
   // Fonts
     
 block append head
-  if site('service_google_analytics')
+  if get(settings.site.service.ga.id)
     +n
     // Global site tag (gtag.js) - Google Analytics 
-    script(async, src="https://www.googletagmanager.com/gtag/js?id=" + site('service_google_analytics'))
+    script(async, src="https://www.googletagmanager.com/gtag/js?id=" + get(settings.site.service.ga.id))
     script.
       window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', '#{site('service_google_analytics')}');
+        gtag('config', '#{get(settings.site.service.ga.id)}');
 
 
 block append top
 
-  if conf('addon_move_on_top')
+  if get(settings.render.moveOnTop)
     div#nahoru
 
 block append header
@@ -82,6 +76,6 @@ block append footer
   +n
 
 block append bottom
-  if conf('addon_move_on_top')
+  if get(settings.render.moveOnTop)
     a.move-on-top(href="#nahoru", aria-label="zpět na začátek stránky")
     

@@ -1,3 +1,99 @@
-@import 'settings'; // Project Settings
-@import "asassin/asassin"; // Framework
+@import 'core';
+@import 'utilities';
+@import 'components';
+
+.gradient {
+  background: rgb(5,62,123);
+  background: linear-gradient(124deg, rgba(5,62,123,1) 24%, rgba(82,170,111,1) 100%);
+
+}
+
+.fx-move-up:hover {
+  transform: translateY(-10px);
+  transition-duration: 1s;
+}
+
+// Components Theming
+
+.btn-filter {
+  @include button-variant(
+    // background-color, border-color, color
+    transparent, $gray-200, $gray-600, // normal
+    $gray-200, $gray-200, $gray-600, // hover
+    transparent, $primary, $primary, // active
+  )
+}
+
+.product-card {
+  border-radius: 0;
+  border-color: $gray-200
+}
+
+.sidebar .category-menu {
+
+  // .nav-item > .nav-link:hover {
+  //   background-color: $primary-soft;
+  // }
+
+  > .nav-item:last-child .wrap {
+    border: none !important;
+  }
+
+  .nav-item .toggle-icon {
+    color: $gray-400;
+    @include transition();
+    &:hover {
+      color: $secondary
+    }
+  }
+
+  .nav-link.active, .nav-link:hover{
+    color: $secondary
+  }
+
+  // .nav-item ul .nav-item > .nav-link:hover {
+  //   text-decoration: underline;
+  // }
+}
+
+
+// Custom
+
+
+.header.header-mobile {
+
+  .hm-category {
+    flex: 1 1 auto;
+  }
+  
+  .hm-cart,
+  .hm-account {
+    display: none
+  }
+
+  .hm-search {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 430px) {
+    .hm-cart {display: block}
+  }
+
+  @media only screen and (min-width: 630px) {
+    .hm-category {
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    .hm-search {
+      width: 12rem;
+      flex-grow: 1;
+    }
+    .hm-menu {
+      order: 10;
+    }
+  }
+
+}
+
+
 

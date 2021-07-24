@@ -1,0 +1,50 @@
+// New colors
+$primary-soft  : tint-color($primary, 85%) !default;
+$primary-light : tint-color($primary, 40%) !default;
+$primary-dark  : shade-color($primary, 40%) !default;
+
+$secondary-soft  : tint-color($secondary, 85%) !default;
+$secondary-light : tint-color($secondary, 40%) !default;
+$secondary-dark  : shade-color($secondary, 40%) !default;
+
+
+// new color maps
+
+$support-colors: (
+) !default;
+
+$primary-colors: (
+  "primary-soft"  : $primary-soft,
+  "primary-light" : $primary-light,
+  "primary-dark"  : $primary-dark
+) !default;
+
+$secondary-colors: (
+  "secondary-soft"  : $secondary-soft,
+  "secondary-light" : $secondary-light,
+  "secondary-dark"  : $secondary-dark
+) !default;
+
+// // merge new color maps
+$new-colors : map-merge($primary-colors, $secondary-colors);
+$new-colors : map-merge($new-colors, $support-colors);
+
+// Extend maps
+$spacers-custom: (
+  6 : $spacer * 5,
+) !default;
+
+$font-sizes-custom: (
+  7 : $font-size-base * 0.85,
+  8 : $font-size-base * 0.7, 
+  9 : $font-size-base * 0.5, 
+) !default;
+
+$aspect-ratios-custom: (
+  "18x6" : calc(6 / 18 * 100%)
+) !default;
+
+$spacers       : map-merge($spacers, $spacers-custom);
+$font-sizes    : map-merge($font-sizes, $font-sizes-custom);
+$aspect-ratios : map-merge($aspect-ratios, $aspect-ratios-custom);
+

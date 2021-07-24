@@ -1,29 +1,307 @@
-ul.nav.flex-column.bg-white
-  li.nav-item
-    a.nav-link.text-dark.fw-bold.active(aria-current="page", href="#")
-      i.bi-chevron-right.me-2
-      | Výprodej
-  li.nav-item
-    a.nav-link.text-dark.fw-bold(href="#")
-      i.bi-chevron-right.me-2
-      | Totální výprodej
-    ul.nav.flex-column
+-
+  //- var items = [
+  //-   {
+  //-     id: 'Inkontinence',
+  //-     name: 'Inkontinence', 
+  //-     sub: [
+  //-       {
+  //-         id: 'iStupenInkontinence',
+  //-         name: 'I. Stupeň inkontinence',
+  //-       }, 
+  //-       {
+  //-         id: 'iiStupenInkontinence',
+  //-         name: 'II. Stupeň inkontinence',
+  //-       }, 
+  //-       {
+  //-         id: 'iiiStupenInkontinence',
+  //-         name: 'III. Stupeň inkontinence',
+  //-       }, 
+  //-       {
+  //-         id: 'podlozky',
+  //-         name: 'Podložky',
+  //-       }, 
+  //-       {
+  //-         id: 'fixacniPomucky',
+  //-         name: 'Fixační pomůcky',
+  //-       }
+  //-     ]
+  //-   },
+  //-   {
+  //-     id: 'PratelneSpodniPradlo',
+  //-     name: 'Pratelné spodní prádlo', 
+  //-     sub: []
+  //-   },
+  //-   {
+  //-     id: 'Kosmetika',
+  //-     name: 'Kosmetika', 
+  //-     sub: [
+  //-       {
+  //-         id: 'mastiAKremyVTubach',
+  //-         name: 'Masti a krémy v tubách',
+  //-       }, 
+  //-       {
+  //-         id: 'mytiSUzitimVody',
+  //-         name: 'Mytí s užitím vody',
+  //-       }, 
+  //-       {
+  //-         id: 'mytiBezUzitiVody',
+  //-         name: 'Mytí bez užití vody',
+  //-       }, 
+  //-       {
+  //-         id: 'peceOPokozku',
+  //-         name: 'Péče o pokožku',
+  //-       }
+  //-     ]
+  //-   },
+  //-   {
+  //-     id: 'BamboNatureDetskySortiment',
+  //-     name: 'Bambo Nature - dětský sortiment', 
+  //-     sub: [
+  //-       {
+  //-         id: 'bamboNatureDetskePlenkoveKalhotky',
+  //-         name: 'Bambo Nature - dětské plenkové kalhotky',
+  //-       },
+  //-       {
+  //-         id: 'bamboNaturePantsDetskePlenkoveKalhotky',
+  //-         name: 'Bambo Nature Pants - dětské plenkové kalhotky',
+  //-       },
+  //-       {
+  //-         id: 'bamboDreamyNightPantsDetskePlenkoveKalhotky',
+  //-         name: 'Bambo Dreamy Night Pants - dětské plenkové kalhotky',
+  //-       },
+  //-       {
+  //-         id: 'bamboNatureDetskePodlozky',
+  //-         name: 'Bambo Nature - dětské podložky',
+  //-       },
+  //-       {
+  //-         id: 'bamboNatureVlhceneUbrousky',
+  //-         name: 'Bambo Nature - vlhčené ubrousky',
+  //-       },
+  //-       {
+  //-         id: 'detskeBryndaky',
+  //-         name: 'Dětské bryndáky',
+  //-       },
+  //-       {
+  //-         id: 'tabletyDoNocniku',
+  //-         name: 'Tablety do nočníku',
+  //-       },
+  //-     }
+  //-     ]
+  //-   },
+  //-   {
+  //-     id: 'DoplnkovySortiment',
+  //-     name: 'Doplňkový sortiment', 
+  //-     sub: [
+  //-       {
+  //-         id: 'rukavice'
+  //-         name: 'Rukavice',
+  //-       }, 
+  //-       {
+  //-         id: 'ochranaOdevu'
+  //-         name: 'Ochrana oděvů',
+  //-       }, 
+  //-       {
+  //-         id: 'navlekyNaObuv'
+  //-         name: 'Návleky na obuv',
+  //-       }, 
+  //-       {
+  //-         id: 'ochranaLuzkaALozniPradlo'
+  //-         name: 'Ochrana lůžka a ložní prádlo',
+  //-       }, 
+  //-       {
+  //-         id: 'pomuckyKMyti'
+  //-         name: 'Pomůcky k mytí',
+  //-       }, 
+  //-       {
+  //-         id: 'hygienaDutinyUstni'
+  //-         name: 'Hygiena dutiny ústní',
+  //-       }, 
+  //-       {
+  //-         id: 'polohovaciServirovaciStolek'
+  //-         name: 'Polohovací servírovací stolek',
+  //-       }, 
+  //-       {
+  //-         id: 'rouskyUstenkyNaOblicej'
+  //-         name: 'Roušky / ústenky na obličej',
+  //-       }, 
+  //-       {
+  //-         id: 'ostatni'
+  //-         name: 'Ostatní',
+  //-       }
+  //-     ]
+  //-   },
+  //-   {
+  //-     id: 'ObvazyAObvazovyMaterial',
+  //-     name: 'Obvazy a obvazový materiál', 
+  //-     sub: [
+  //-       {
+  //-         id: 'osetreniRan',
+  //-         name: 'Ošetření ran',
+  //-       }, 
+  //-       {
+  //-         id: 'obinadlaAObvazy',
+  //-         name: 'Obinadla a obvazy',
+  //-       }, 
+  //-       {
+  //-         id: 'naplasti',
+  //-         name: 'Náplasti',
+  //-       }
+  //-     ]
+  //-   },
+  //-   {
+  //-     id: 'Sladidla',
+  //-     name: 'Sladidla', 
+  //-     sub: []
+  //-   },
+    
+  //- ];
 
-      -
-        var list = [
-          'Nápojové kelímky',
-          'Jednorázové nádobí',
-          'Papírové obaly',
-          'Plastové sáčky, tašky a pytle',
-          'BIO kompostovatelné obaly',
-          'Čistící a úklidové prostředky',
-          'Kompostéry',
-          'Opakovaně použitelné produkty',
-        ]
+  var items = [
+    ['Inkontinence', [
+        'I. Stupeň inkontinence',
+        'II. Stupeň inkontinence',
+        'III. Stupeň inkontinence',
+        'Podložky',
+        'Fixační pomůcky',
+    ]],
+    ['Pratelné spodní prádlo', [
+
+    ]],
+    ['Kosmetika', [
+      'Masti a krémy v tubách',
+      'Mytí s užitím vody',
+      'Mytí bez užití vody',
+      'Péče o pokožku',
+    ]],
+    ['Bambo Nature - dětský sortiment', [
+      'Bambo Nature - dětské plenkové kalhotky',
+      'Bambo Nature Pants - dětské plenkové kalhotky',
+      'Bambo Dreamy Night Pants - dětské plenkové kalhotky',
+      'Bambo Nature - dětské podložky',
+      'Bambo Nature - vlhčené ubrousky',
+      'Dětské bryndáky',
+      'Tablety do nočníku',
+
+    ]],
+    ['Doplňkový sortiment', [
+      'Rukavice',
+      'Ochrana oděvů',
+      'Návleky na obuv',
+      'Ochrana lůžka a ložní prádlo',
+      'Pomůcky k mytí',
+      'Hygiena dutiny ústní',
+      'Polohovací servírovací stolek',
+      'Roušky / ústenky na obličej',
+      'Ostatní',
+
+    ]],
+    ['Obvazy a obvazový materiál', [
+      'Ošetření ran',
+      'Obinadla a obvazy',
+      'Náplasti',
+
+    ]],
+    ['Sladidla', [
+
+    ]],
+    
+  ];
+
+  var list = [
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Kompostéry',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Kompostéry',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+  ];
+
+  var listSub = [
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Kompostéry',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+    'Kompostéry',
+    'Nápojové kelímky',
+    'Jednorázové nádobí',
+    'Papírové obaly',
+  ];
+
+h2.mb-0.p-3.fs-6.bg-secondary.rounded-top Kategorie Produktů
+ul.list-unstyled.category-menu.border.rounded-bottom.border-secondary
+  
+  each item, key in items
+    li.nav-item
+      .wrap.d-flex.justify-content-between.border-bottom
+        a.nav-link.fw-bold(href="kategorie.html") 
+          div #{item[0]}
+          - var hasSubmenu = item[1].length > 0 ? true : false;
+        if hasSubmenu
+          button.btn.btn-link.toggle-icon(data-bs-toggle="collapse", href= '#navGroup' + key, role="button", aria-expanded= "false", aria-controls= 'navGroup' + key)
+            i.bi-plus-square
+      if hasSubmenu
+        ul.list-unstyled.collapse.multi-collapse(id= 'navGroup' + key, class= (key == 0 ? "show" : ""))
+          each subitem, subkey in item[1]
+            li.nav-item
+              a.nav-link.fs-7.border-bottom(href="kategorie.html", class=(subkey == 1 ? "active" : "")) #{subitem}
+           
+  
+  
+  //- li.nav-item
+  //-   a.nav-link.text-dark.fw-bold(href="#")
+  //-     i.bi-chevron-right.me-2
+  //-     | Totální výprodej
+  //-   ul.nav.flex-column
+
+     
       
-      each val in list 
+  //-     li.nav-item
+  //-         a.d-flex.nav-link.text-dark(href="#") BIO kompostovatelné obaly
+  //-           span #{val}
+  //-           i.bi-chevron-right.ms-auto
+          
+          
+  //-         ul.nav.flex-column
+            
+  //-           li.nav-item-sub.ms-2
+  //-             a.nav-link.text-primary.py-0(href="#")
+  //-               i.bi-chevron-right.fs-8.me-1
+  //-               | Plastové misky na saláty
+              
+  //-             - var i = 0;
+  //-             +repeat(2)
+  //-               - i++;
+  //-               ul.nav.flex-column
+  //-                 li.nav-item-sub.ms-2
+  //-                   a.nav-link.text-primary.py-0(href="#")
+  //-                     i.bi-chevron-right.fs-8.me-1
+  //-                     = listSub[i]
 
-        li.nav-item
-          a.d-flex.nav-link.text-dark(href="#")
-            span #{val}
-            i.bi-chevron-right.ms-auto
+  //-           //- - var i = 0;
+  //-           +repeat(3)
+  //-             - i++;
+  //-             li.nav-item-sub.ms-2
+  //-               a.nav-link.text-primary.py-0(href="#")
+  //-                 i.bi-chevron-right.fs-8.me-1
+  //-                 = listSub[i]
+
+  //-     each val in list 
+
+  //-       li.nav-item
+  //-         a.d-flex.nav-link.text-dark(href="#")
+  //-           span #{val}
+  //-           i.bi-chevron-right.ms-auto

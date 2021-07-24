@@ -1,61 +1,67 @@
 extends /src/views/templates/base
 
 block append settings-page 
-  //- - settings.page.group = "";
-  - settings.page.title_base = "Doprava a platba";
-  //- - settings.page.description = "";
-  - var dummy = new Dummy();
+  - var page = new Page('Kategorie');
+  - var data = new Data('modules/dummy/ecommerce.js');
 
+  //- - settings.page.group = "";
+  //- - settings.page.title.base = "Doprava a platba";
+  //- - settings.page.description = "";
+
+ 
 block append content
 
-  .group-of-steps.mb-5.d-none.d-sm-flex
-    +step('Košík','1').step-done
-    +step('Doprava a platba','2').step-active
-    +step('Dodací údaje','3')
-    +step('Souhrn a odeslání','4')
-  
 
-  h1.fs-3.mb-3 Doprava
-  .group-of-item-rows.mb-5
+  .px-lg-5
 
+    .group-of-steps.my-5.d-none.d-sm-flex
+      +step('Košík','1').step-done
+      +step('Doprava a platba','2').step-active
+      +step('Dodací údaje','3')
+      +step('Souhrn a odeslání','4')
     
 
-    each block in dummy.getList('payment')
+    h1.fs-3.mb-3 Doprava
+    .group-of-item-rows.mb-5
 
-      .item-row.border-bottom.border-g200.py-2
-        .w-16rem
-          .form-check.form-check-inline
-            input.form-check-input(type='checkbox', value='', id='')
-            label.form-check-label(for='') #{block.item}
-        .item-row-col.w-5rem
-          span.fs-7 #{block.price}
-        .item-row-col
-          span.text-muted.fs-7 #{block.note}
+      each block in data.list('payment')
+
+        .py-3.mw-30rem.border-bottom.border-g200
+          .d-flex.justify-content-between
+            .flex-fill
+              .w-100.form-check.form-check-inline
+                input.form-check-input(type='radio', name='paymentMethod' value= 'paymentMethod' + block.id, id= 'paymentMethod' + block.id)
+                label.w-100.form-check-label(for='paymentMethod' + block.id) #{block.item}
+            .pe-4.text-end
+              | #{block.price}
+          .text-muted.fs-7.lh-sm.py-2
+            | Rozvoz je prováděn do všech částí města Prahy. Při volbě tohoto způsobu dopravy je možná pouze platba předem převodem na účet nebo předem úhrada v hotovosti v sídle společnosti.
+            
+    h1.fs-3.mb-3 Platba
+    .group-of-item-rows.mb-5
+
+      each block in data.list('shipment')
+
+        .py-3.mw-30rem.border-bottom.border-g200
+          .d-flex.justify-content-between
+            .flex-fill
+              .w-100.form-check.form-check-inline
+                input.form-check-input(type='radio', name='shipmentMethod' value= 'shipmentMethod' + block.id, id= 'shipmentMethod' + block.id)
+                label.w-100.form-check-label(for='shipmentMethod' + block.id) #{block.item}
+            .pe-4.text-end
+              | #{block.price}
+          .text-muted.fs-7.lh-sm.py-2
+            | #{block.note}
 
 
-
-  h1.fs-3.mb-3 Platba
-  .group-of-item-rows.mb-5
+      
     
-    each block in dummy.getList('shipment')
-
-      .item-row.border-bottom.border-g200.py-2
-        .w-16rem
-          .form-check.form-check-inline
-            input.form-check-input(type='checkbox', value='', id='')
-            label.form-check-label(for='') #{block.item}
-        .item-row-col.w-5rem
-          span.fs-7 #{block.price}
-        .item-row-col
-          span.text-muted.fs-7 #{block.note}
-    
-  
-  .row.row-cols-1.row-cols-sm-2
-    .col.mb-4
-      a.link-muted(href="kosik-1-obsah-kosiku.html")
-        i.me-1.bi.bi-chevron-left
-        | Zpět na položky košíku
-    .col.text-end
-      a.btn.btn-xl.btn-primary(href='kosik-3-dodaci-udaje.html')
-        | Dodací údaje
-        i.bi.bi-chevron-right.ms-3
+    .row.row-cols-1.row-cols-sm-2
+      .col.mb-4
+        a.link-muted(href="kosik-1-obsah-kosiku.html")
+          i.me-1.bi.bi-chevron-left
+          | Zpět na položky košíku
+      .col.text-end
+        a.btn.btn-xl.btn-primary(href='kosik-3-dodaci-udaje.html')
+          | Dodací údaje
+          i.bi.bi-chevron-right.ms-3

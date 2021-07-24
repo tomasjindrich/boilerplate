@@ -1,0 +1,91 @@
+$step-unactive-color: $gray-400 !default;
+$step-active-color: $primary !default;
+$step-mark-in-color: $white !default;
+
+.step {
+
+  flex: 1;
+
+  .step-title {
+    padding-bottom: 0.5rem;
+    text-align: center;
+    white-space: nowrap;
+    color: darken($step-unactive-color, 20%);
+  }
+
+  .step-progress {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .step-line-start,
+    .step-line-end {
+      flex-grow: 1;
+      height: 4px;
+      background-color: $step-unactive-color;
+    }
+
+    .step-mark {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 60px;
+      height: 60px;
+      background-color: $step-unactive-color;
+    }
+
+    .step-mark-num {
+      font-size: 1.5rem;
+      color: $step-mark-in-color;
+    }
+
+    .step-mark-icon {
+      display: none;
+      color: rgba($step-mark-in-color, 0.7);
+      font-size: 1.5rem;
+    }
+
+  }
+
+  &.step-active,
+  &.step-done {
+    .step-title {
+      color: $step-active-color;
+    }
+    .step-mark {
+      background-color: $step-active-color;
+    }
+    .step-line-end,
+    .step-line-start {
+      background-color: $step-active-color;
+    }
+  }
+
+  &.step-done {
+    .step-mark-num {
+      display: none;
+    }
+    .step-mark-icon {
+      display: block;
+    }
+  }
+
+}
+
+.group-of-steps {
+
+  &.group-of-steps-no-sides {
+    .step:first-child {
+      .step-line-start {
+        background-color: transparent;
+      }
+    }
+    .step:last-child {
+      .step-line-end {
+        background-color: transparent;
+      }
+    }
+  }
+}
+

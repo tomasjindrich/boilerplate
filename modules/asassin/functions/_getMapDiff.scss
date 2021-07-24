@@ -1,0 +1,10 @@
+// vezme dvě mapy a vrátí hodnoty ve kterých se neshodují
+@function getMapDiff($map1, $map2) {
+  @each $color, $value in $map2 {
+    @if $value == map-get($map1, $color) {
+      // postupně vyhazuje položky, které jsou u obou map stejné
+      $map2: map-remove($map2, $color)
+    }
+  }
+  @return $map2;
+}

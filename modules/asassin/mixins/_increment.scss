@@ -1,0 +1,11 @@
+// začni od hodnoty $start, zvětšuj postupně o hodnotu $increment
+// dokud nedosáhneš hodnoty $max
+@mixin increment($selector, $value_suffix, $property, $unit, $start, $increment, $max) {
+  $value: $start;
+  @while $max >= $value {
+    .#{$selector}-#{$value}#{$value_suffix} {
+      #{$property}: #{$value}#{$unit} !important
+    }
+    $value: $value + $increment;
+  }
+}

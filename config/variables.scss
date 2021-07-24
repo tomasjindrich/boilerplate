@@ -1,0 +1,51 @@
+$enable-rounded          : true;
+$enable-shadows          : false;
+$enable-gradients        : false;
+$enable-negative-margins : true;
+
+// $font-family-base     : '\'PT Sans\', sans-serif;';
+// $headings-font-family : '\'Poppins\', sans-serif;';
+// $headings-font-weight : 700;
+
+
+// Root Colors
+$blue   : #053e7b;
+$green  : #52aa6f;
+$red    : #f2104d;
+$orange : #f26430;
+
+
+
+// Support Colors
+$opal  : #9fc2cc;
+$wheat : #f1ecce;
+$london : #af8ca3;
+
+$support-colors: (
+ "sc1"  : $opal,
+ "sc2"  : $wheat,
+ "sc3"  : $london,
+);
+
+// Theme Colors
+$primary   : $blue;
+$secondary : $green;
+$info      : $opal;
+
+
+$box-shadow:                  0 .5rem 1rem rgba($primary, .08);
+$box-shadow-sm:               0 .125rem .25rem rgba($primary, .075);
+$box-shadow-lg:               0 1rem 3rem rgba($primary, .175);
+$box-shadow-inset:            inset 0 1px 2px rgba($primary, .075);
+
+
+
+// $primary-soft  : tint-color($primary, 85%) !default;
+// $primary-light : tint-color($primary, 40%) !default;
+// $primary-dark  : shade-color($primary, 40%) !default;
+
+// $secondary-soft  : tint-color($secondary, 85%) !default;
+// $secondary-light : tint-color($secondary, 40%) !default;
+// $secondary-dark  : shade-color($secondary, 40%) !default;
+
+

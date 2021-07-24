@@ -3,42 +3,37 @@
 mixin productCard
   -
     var dummy = new Dummy();
-    var block = {
-      title: dummy.randomText('title'),
-      description: dummy.randomText('description'),
-      imgSrc: "img/dummy/"+ dummy.randomNum(1,20) +".jpg",
-      //- imgSrc: "https://via.placeholder.com/500x500",
-      imgAlt: dummy.randomText('title'),
-      priceVat: dummy.priceVat(),
-      priceNoVat: dummy.priceNoVat(),
-      discount: dummy.randomNum(15,35),
-    };
-    
+    var data = new Data('src/data/products.js');
+    var dummyData = new Data('modules/dummy/dummy.js');
+
   .col
-    .card.product-card.h-100
-      a(href="")
+    .card.product-card.h-100.d-flex
+      a(href="produkt.html")
         .ratio.ratio-1x1
           .p-3.d-flex.align-items-center.justify-content-center
-            img.mw-100.mh-100(src= block.imgSrc, alt= block.imgAlt) 
+            img.mw-100.mh-100(src= dummy.img('custom/'), alt= data.random('names')) 
           //- badge container
-          .ps-2.pt-1.text-start
+          .ps-3.pt-3.text-start
             if dummy.fortune(20)
-              .badge.bg-warning.text-dark -#{block.discount} %
+              .badge.bg-warning.text-dark -#{randomNum(15,35)} %
             if dummy.fortune(20)
               .badge.bg-success Novinka
-            if dummy.fortune(10)
-              .badge.bg-info Výprodej
             if dummy.fortune(5)
               .badge.bg-danger Doprodej
       
-      .card-body.d-flex.flex-column.text-center.p-3
+      .py-0.card-body.text-center.lh-sm
         
-        a.card-title.text-reset.text-decoration-none.lh-sm.fw-normal(href="") #{block.sequence} #{block.title}
-        //- .card-text.lh-sm.fs-8 #{block.description}
+        a.card-title.text-primary.text-decoration-none(href="produkt.html") #{data.random('names')}
+        .mt-2.fs-8
+          div Kód zboží: 10000#{randomNum(15000,19000)}
+          .text-secondary
+            span.fw-bold SKLADEM 
+            | NAD 50 KS
         
-        .m-2.d-flex.flex-fill.align-items-end
-          .mx-auto
-            .text-nowrap.fw-bold.text-color-santafe.lh-1.mb-3
-              .mb-1 #{block.priceNoVat} bez DPH / 1 ks
-              div #{block.priceVat} s DPH / 1 ks 
-            a.btn.btn-sm.btn-secondary.text-uppercase(href="#") ZOBRAZIT
+
+      .mt-3.mb-4.text-center
+        .mb-2.text-danger.fs-5.fw-bold #{dummy.priceVat()} 
+            span.fs-8 s DPH 
+        .d-flex.justify-content-center
+          input.mx-1.w-3rem.form-control.text-center.text-muted(type="text", value="1")
+          a.mx-1.btn.btn-outline-primary(href="#") Do košíku

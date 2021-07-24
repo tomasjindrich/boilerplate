@@ -1,0 +1,33 @@
+extends /src/views/templates/base
+
+block append settings-page 
+  - var page = new Page('Přehled');
+
+block header 
+block footer
+
+block main
+
+  main.main
+
+    .container-xxl.py-5
+
+      .w-6rem.mb-5
+        .ratio.ratio-1x1
+          img.img-fluid(src="img/logo.png", alt="")
+      -
+        var pages = getListOfPages();
+
+      .row.g-2
+        
+        each page in pages
+
+          .col-12.col-md-6.col-lg-4
+            .h-100.card.bg-200
+              .card-body.p-4.text-center
+                div.mb-3
+                  i.bi-file-earmark-code.display-2.text-200
+                div
+                  a.stretched-link(href=page)= page
+              
+            
